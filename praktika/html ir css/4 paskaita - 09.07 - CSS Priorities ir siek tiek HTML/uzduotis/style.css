@@ -1,0 +1,164 @@
+@import url(https://necolas.github.io/normalize.css/latest/normalize.css);
+
+@import url();
+/* header */
+
+body{
+    color: white;
+    background-image: url(./bearded\,\ brown\ \ anime.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* body > *{
+    background-color: rgba(128, 128, 128, 0.521);
+} */
+
+header{
+    /* background-color: rgba(168, 139, 139, 0.644); */
+    width: 100%;
+    height: auto;
+    font-size: 60px;   
+}
+
+nav{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.719);
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding-top: 30px;
+}
+
+/* hero */
+
+.hero{
+    height: 800px;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(168, 139, 139, 0.644);
+    width: max-content;
+    margin: 0 auto;
+    
+}
+
+.hero * {
+    margin: 0;
+    
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 60px;
+}
+
+/* main sections */
+
+main{
+    display: flex;
+    flex-direction: column  ;
+    padding-left:10%;
+    padding-right:10%;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+main  h1{
+    background-color: rgba(0, 0, 0, 0.774);
+    margin: 0;
+    height: 100px;
+    padding: 30px;
+    justify-items: center;
+    line-height: 100px;
+}
+main > section{
+    display: flex;
+    flex-direction: column  ;
+    align-content: center;
+    width: 80%;
+    border: 1px solid black;
+    margin: 10px auto;
+    border-radius: 10px;
+   
+}
+
+/* about */
+
+#about > article{
+    display: flex;
+}
+
+.card > p {
+    padding: 20px;
+    margin-right: 5%;
+}
+
+/* .card{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+} */
+
+/* hobby */
+
+#hobby > section, .music-container , .games-container{
+    border: 1px solid black;
+}
+
+.music-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+
+.games-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.guitar{
+    background-image: url(./IMG_20230907_152458.jpg);
+}
+
+.pc{
+    background-image: url(./IMG_20230907_152611.jpg);
+}
+
+.guitar, .pc{
+    width: auto;
+    height: 600px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+article{
+    box-shadow: 0px 10px 10px black;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+
+p{
+    text-align: center;
+}
+
+.card{
+    padding: 100px;
+}
+
+section > article > p{
+    background-color: rgba(0, 0, 0, 0.63);
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 20px;
+}

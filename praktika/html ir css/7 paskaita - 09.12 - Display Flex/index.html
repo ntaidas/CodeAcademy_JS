@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>7 paskaita - 09.12 - Display Flex</title>
+</head>
+<body>
+    <header>
+        <nav><ul>
+            <li><a href="">Pirmas</a></li>
+            <li><a href="">Antras</a></li>
+            <li><a href="">Trecias</a></li>
+            <li><a href="">Ketvirtas</a></li>
+            <li><a href="">Penktas</a></li>
+        </ul></nav>
+    </header>
+    <main>
+        <section> <!-- Flex -->
+            <h1>Display Flex</h1>
+            <ul>
+                <li>Parent(container)
+                    <ul>
+                        <li>
+                            display: flex - suteikia konteineriui flex display
+                        </li>
+                        <li>
+                            flex-direction: row/row-reverse/column/column-reverse - nurodo kuria kryptimi isdestomi elementai flex conteinerio viduje
+                        </li>
+                        <li>
+                            flex-wrap: nowrap/wrap/wrap-reverse - nurodo ar/kaip elementai netelpantys konteinerio viduje pereis i kitas eilutes/stulpelius
+                        </li>
+                        <li>
+                            flex-flow: - flex-direction su flex-wrap
+                        </li>
+                        <li>
+                            justify-content: flex-start/flex-end/center/space-between/space-around/space-evenly - nurodo, kaip elementai issidesto main asyje
+                        </li>
+                        <li>
+                            align-content: stretch/flex-start/flex-end/center/space-between/space-around/space-evenly - nurodo kaip elementai(visi bendrai) issidesto cross asyje
+                        </li>
+                        <li>
+                            align-items: stretch/flex-start/flex-end/center/baseline - nurodo kaip elementai(atskiros eilutes/stulpeliai) issidesto cross asyje.
+                        </li>
+                        <li>
+                            gap/column-gap/row-gap: nurodo tarpa tarp elementu conteineryje
+                        </li>
+                    </ul>
+                </li>
+                <li>Child(container items)
+                    <ul>
+                        <li>
+                            order: number - nurodo vaikinio elemento eiliskumo lygmeni
+                        </li>
+                        <li>
+                            flex-grow: number - nurodo elemento didejimo santyki
+                        </li>
+                        <li>
+                            flex-shrink: number - nurodo elemento mazejimo(jei tenka mazeti) santyki
+                        </li>
+                        <li>
+                            flex-basis: %/px/rem/number - nurodoma elemento viso galimo plocio(kalbant apie tevinio elemento ploti) dalis
+                        </li>
+                        <li>
+                            flex: flex-grow|flex-shrink|flex-basis
+                        </li>
+                        <li>
+                            align-self: stretch/flex-start/flex-end/center/baseline - nurodo kaip pavienis vaikinis elementas turi atsistoti cross asyje(veikia su align-items, ne su align-content)
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="pvz"> <!-- Pavyzdziai -->
+            <h1>Flex pavyzdziai</h1>
+            <div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Back to the Future",
+      "genre": "Adventure Comedy Sci-Fi",
+      "tier": "SSS",
+      "releaseDate": 1985,
+      "cover": "https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+      "description": "Marty McFly, a 17-year-old high school student, is accidentally sent 30 years into the past in a time-traveling DeLorean invented by his close friend, the maverick scientist Doc Brown.",
+      "imdbRating": 8.5
+    },
+    {
+      "id": 2,
+      "title": "Gran Torino",
+      "genre": "Drama",
+      "tier": "S",
+      "releaseDate": 2008,
+      "cover": "https://m.media-amazon.com/images/M/MV5BMTc5NTk2OTU1Nl5BMl5BanBnXkFtZTcwMDc3NjAwMg@@._V1_FMjpg_UX1000_.jpg",
+      "description": "After a Hmong teenager tries to steal his prized 1972 Gran Torino, a disgruntled, prejudiced Korean War veteran seeks to redeem both the boy and himself.",
+      "imdbRating": 8.1
+    },
+    {
+      "id": 3,
+      "title": "Groundhog Day",
+      "genre": "Comedy Drama Fantasy",
+      "tier": "S",
+      "releaseDate": 1993,
+      "cover": "https://m.media-amazon.com/images/M/MV5BZWIxNzM5YzQtY2FmMS00Yjc3LWI1ZjUtNGVjMjMzZTIxZTIxXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+      "description": "A narcissistic, self-centered weatherman finds himself in a time loop on Groundhog Day.",
+      "imdbRating": 8
+    },
+    {
+      "id": 4,
+      "title": "The Dark Knight",
+      "genre": "Action Crime Drama",
+      "tier": "S",
+      "releaseDate": 2008,
+      "cover": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg",
+      "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "imdbRating": 9
+    },
+    {
+      "id": 1697999418166,
+      "title": "Batman",
+      "genre": "Adventure Action",
+      "tier": "S",
+      "releaseDate": 1989,
+      "cover": "https://m.media-amazon.com/images/M/MV5BMTYwNjAyODIyMF5BMl5BanBnXkFtZTYwNDMwMDk2._V1_.jpg",
+      "description": "The Dark Knight of Gotham City begins his war on crime with his first major enemy being Jack Napier, a criminal who becomes the clownishly homicidal Joker.",
+      "imdbRating": 7.5
+    },
+    {
+      "id": 1697999584621,
+      "title": "Event Horizon",
+      "genre": "Sci-Fi Horror",
+      "tier": "A",
+      "releaseDate": 1997,
+      "cover": "https://m.media-amazon.com/images/M/MV5BZGI0NDMwNjAtNGEzNC00MzA1LTlkMjQtYjBkYTZlZjAyZWEyXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
+      "description": "A rescue crew is tasked with investigating the mysterious reappearance of a spaceship that had been lost for seven years.",
+      "imdbRating": 6.6
+    },
+    {
+      "id": 1698008341158,
+      "title": "Your Name.",
+      "genre": "Drama Fantasy",
+      "tier": "SSS",
+      "releaseDate": 2016,
+      "cover": "https://m.media-amazon.com/images/M/MV5BODRmZDVmNzUtZDA4ZC00NjhkLWI2M2UtN2M0ZDIzNDcxYThjL2ltYWdlXkEyXkFqcGdeQXVyNTk0MzMzODA@._V1_FMjpg_UX1000_.jpg",
+      "description": "Two teenagers share a profound, magical connection upon discovering they are swapping bodies. Things manage to become even more complicated when the boy and girl decide to meet in person.",
+      "imdbRating": 8.4
+    },
+    {
+      "id": 1698008976790,
+      "title": "Star Wars: Episode IV - A New Hope",
+      "genre": "Adventure Fantasy Action",
+      "tier": "S",
+      "releaseDate": 1977,
+      "cover": "https://m.media-amazon.com/images/M/MV5BMDM1NmMxMzItYWUzMC00Yzc2LTk4MzctOTdkNDVhODY2N2MxXkEyXkFqcGdeQXVyNDQ0Mjg4NTY@._V1_.jpg",
+      "description": "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.",
+      "imdbRating": 8.6
+    }
+  ]
+}

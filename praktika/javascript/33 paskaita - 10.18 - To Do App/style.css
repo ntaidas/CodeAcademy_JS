@@ -1,0 +1,83 @@
+body {
+  background-color: rgba(197, 196, 194, 0.24);
+}
+body #control {
+  height: 20vh;
+}
+body #control form {
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+}
+body #control form #addTask {
+  width: 18rem;
+  font-size: 1.5rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+body #control form :last-child {
+  width: 6rem;
+  border: none;
+  background-color: rgb(72, 70, 207);
+  color: aliceblue;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+body #list {
+  text-align: center;
+}
+body #list ul li {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+body #list ul li button {
+  border: none;
+  background-color: white;
+  border-radius: 45%;
+}
+body #list ul li span {
+  font-size: 2rem;
+}
+body #list ul li span input {
+  height: 2rem;
+}
+body #list ul li span .edit {
+  position: relative;
+  bottom: 0.6rem;
+}
+body #list ul li span .edit img {
+  height: 0.8rem;
+  width: 0.8rem;
+}
+body button,
+body form > input:last-child {
+  cursor: pointer;
+}
+
+.container {
+  border-radius: 1em;
+  box-shadow: 0em 0 10px 1px black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  justify-content: space-evenly;
+}
+.container h1 {
+  font-size: 3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+button > img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.done {
+  background-color: green;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YOMD</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./main.js" type="module"></script>
+  </head>
+  <body>
+    <main>
+      <section id="uzd">
+        <h1>Your Own Movie Database!</h1>
+        <div id="addMovie">
+          <h1>Add Movie</h1>
+          <form>
+            <div>
+              <label for="title">Title:</label>
+              <input type="text" name="title" id="title" />
+            </div>
+            <div id="genreCheckBox">
+              <div>
+                <input type="checkbox" name="genre" id="Drama" value="Drama" />
+                <label for="Drama">Drama</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="genre"
+                  id="Adventure"
+                  value="Adventure"
+                />
+                <label for="Adventure">Adventure</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="genre"
+                  id="Comedy"
+                  value="Comedy"
+                />
+                <label for="Comedy">Comedy</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="genre"
+                  id="Sci-Fi"
+                  value="Sci-Fi"
+                />
+                <label for="Sci-Fi">Sci-Fi</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="genre"
+                  id="Fantasy"
+                  value="Fantasy"
+                />
+                <label for="Fantasy">Fantasy</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="genre"
+                  id="Action"
+                  value="Action"
+                />
+                <label for="Action">Action</label>
+              </div>
+              <div>
+                <input type="checkbox" name="genre" id="Crime" value="Crime" />
+                <label for="Crime">Crime</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="genre"
+                  id="Horror"
+                  value="Horror"
+                />
+                <label for="Horror">Horror</label>
+              </div>
+            </div>
+            <div>
+              <label for="tier">Tier:</label>
+              <select name="tier" id="tier" required>
+                <option value="SSS">SSS</option>
+                <option value="S">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+              </select>
+            </div>
+            <div>
+              <label for="releaseDate">Release Date:</label>
+              <input type="number" name="releaseDate" id="releaseDate" />
+            </div>
+            <div>
+              <label for="cover">Cover Picture:</label>
+              <input type="url" name="cover" id="cover" />
+            </div>
+            <div>
+              <label for="description">Description</label>
+              <textarea
+                name="description"
+                id="description"
+                cols="60"
+                rows="10"
+                placeholder="Best movie ever or is it...."
+              ></textarea>
+            </div>
+            <div>
+              <label for="imdbRating">IMBD Rating:</label>
+              <input
+                type="number"
+                name="imdbRating"
+                id="imdbRating"
+                min="0"
+                step="0.1"
+                max="10"
+              />
+            </div>
+            <input type="submit" value="ADD" />
+          </form>
+        </div>
+      </section>
+      <div id="infoBox"></div>
+      <div id="display"></div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

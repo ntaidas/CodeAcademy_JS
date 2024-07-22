@@ -1,0 +1,114 @@
+body{
+    background-color: gainsboro;
+}
+
+header, section, article, footer{
+    min-width: 600px;
+    max-width: 1000px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px auto;
+    box-shadow: 0px 0px 5px rgb(153, 139, 139);
+    border-radius: 5px;
+}
+
+header, section, h2{
+    text-align: center;
+}
+
+/* Header */
+
+header > figure{
+    background-image: url("https://www.dokobit.com/wp-content/uploads/2022/08/maxima-lo@2x.png?v2");
+    background-size: contain;
+    width: 100%;
+    height: 100px;
+    background-repeat:no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Main */
+
+main > p, footer{
+    text-align:start
+}
+
+/* Article */
+
+article > figure {
+    background-image: url(./1-liudni-slibinai_foto-rycio-seskaicio_post-luko-klimkeviciaus-54aa909a1d05a.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+article > p {
+    font-weight: 500;
+}
+
+/* section */
+
+.card{
+
+    padding: 20px;
+    margin: 0 auto;
+    width: 30%;
+}
+
+.card > figure {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.card > p,h3{
+    margin: 5px auto;
+}
+
+.chicken{
+    background-image: url(https://images.unsplash.com/photo-1626074353765-517a681e40be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hpY2tlbiUyMGZvb2R8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+}
+
+.milk{
+    background-image: url(https://img.freepik.com/free-vector/isolated-milk-box-cartoon-style_1308-117384.jpg?w=360);
+}
+
+.curd{
+    background-image: url(https://i0.wp.com/tandysinclair.com/wp-content/uploads/2021/08/Soft-Cheese.jpg?ssl=1);
+}
+
+.chicken, .milk, .curd{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Footer */
+
+footer > figure{
+    width: 100%;
+    height: 500px;
+}
+
+#map{
+    background-image: url(./download.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.copy{
+    text-align: center;
+}

@@ -1,0 +1,73 @@
+body > div{
+    margin: 10px auto;
+}
+
+div.flex{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    height: 48vh;
+}
+
+div.flex .one, div.flex .two, div.flex .three, div.flex .four{
+    background-color: orangered;
+}
+
+div.flex .two{
+    width: 100%;
+    height: 50%;
+}
+
+div.flex div{ 
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.flex > div.big{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+}
+
+div.flex > div.big > div.small{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 50%;
+}
+
+div.flex > div.big > div.small div{
+    width: 100%;
+}
+
+div.flex .three, div.flex .four{
+    height: 100%;
+}
+
+/* grid */
+
+.grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    height: 48vh;
+}
+
+
+.grid div{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid .one{
+    grid-row-start: span 2;
+}
+.grid .two{
+    grid-column-start: span 2;
+}

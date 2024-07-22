@@ -1,0 +1,35 @@
+td,table{
+    border: 1px solid black;
+}
+table{
+    background-color: blanchedalmond;
+}
+th{
+    background-color: rgba(0, 255, 255, 0.411);
+}
+td{
+    background-color: rgba(219, 214, 214, 0.479);
+}
+
+tfoot td {
+    background-color: aliceblue;
+}
+
+section{
+    margin: 50px auto;
+}
+
+#uzd3{
+    display: flex;
+    justify-content: center;
+}
+#uzd3> form{
+    display: flex;
+    flex-direction: column;
+    
+}
+#uzd3> form > div{
+display: flex;
+justify-content: space-between;
+gap: 10px;
+}

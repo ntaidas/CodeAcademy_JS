@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&display=swap');
+
+
+
+body{
+    color:white;
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    font-size: 50px;
+    
+}
+
+@-webkit-keyframes neon {
+    from {
+      text-shadow: 
+       0 0 10px #fff,
+       0 0 20px #fff,
+       0 0 30px #ff0000,
+       0 0 40px #ff0000,
+       0 0 50px #ff0000,
+       0 0 60px #ff0000,
+       0 0 70px #ff0000;
+    }
+    
+    to {
+      text-shadow: 
+       0 0 20px #fff,
+       0 0 30px #ff0000,
+       0 0 40px #ff0000,
+       0 0 50px #ff0000,
+       0 0 60px #ff0000,
+       0 0 70px #ff0000,
+       0 0 80px #ff0000;
+    }
+  }
+
+/* header */
+
+header{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.616);
+    justify-content: space-between;
+    padding: 5px 20px 5px 20px;
+}
+
+nav>a{
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0 15px;
+    text-shadow: 
+        0px 0px 10px rgb(248, 245, 245),
+        0px 0px 20px rgb(0, 0, 255)
+    ;
+    transition: 0.5s;
+}
+
+nav>a:hover{
+    text-shadow: 0px 0px 10px rgb(252, 252, 252),
+                 0px 0px 15px rgb(255, 255, 255),
+                 0px 0px 40px rgb(255, 0, 0),
+                 0px 0px 50px rgb(255, 0, 0);
+}
+header >img{
+    height: 100px;
+    padding-left: 5%;
+}
+
+/* --------------------main------------------ */
+
+h1,h2{
+    text-align: center;
+    text-shadow: 
+        0px 0px 10px rgb(248, 245, 245),
+        0px 0px 20px rgb(0, 0, 255)
+}
+
+/* hero */
+
+.hero>h1{
+    font-family: 'Dancing Script', cursive;
+
+    animation: neon 1s ease-in-out infinite alternate;
+    font-size: 300px;
+    margin-bottom: 80px;
+}
+
+/* About us */
+
+#aboutUs{ 
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#aboutUs>h1{
+    font-size: 100px;
+    margin:0;
+}
+
+#aboutUs>h2{
+    font-size: 60px;
+    margin-top: 0;
+}
+
+#aboutUs>p{
+    background-color: rgba(0, 0, 0, 0.651);
+    padding-bottom: 10px;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+/* stats */
+
+#stats{
+    width: 90%;
+    margin: 0 auto;
+}
+
+table{
+    margin: 0 auto;
+    border: 1px solid white;
+    box-shadow: 
+                0 0 10px white,
+                0 0 30px blue,
+          inset 0 0 10px white,
+          inset 0 0 30px blue;
+}
+
+th{
+    border: 1px solid white;
+    box-shadow: 
+                0 0 10px white,
+                0 0 30px blue,
+          inset 0 0 10px white,
+          inset 0 0 30px blue;
+          padding: 10px;
+}
+
+td{
+    border: 1px solid white;
+    box-shadow: 
+                0 0 5px white,
+                0 0 10px blue,
+          inset 0 0 5px white,
+          inset 0 0 10px blue;
+    text-align: center;
+    padding: 10px;
+}
+
+td>img{
+    width: 160px;
+    height: 200px;
+}
+
+td>p{
+    margin: 0;
+}

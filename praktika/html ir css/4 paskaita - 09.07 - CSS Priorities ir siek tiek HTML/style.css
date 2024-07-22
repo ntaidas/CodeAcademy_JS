@@ -1,0 +1,48 @@
+@import url(https://necolas.github.io/normalize.css/latest/normalize.css);
+
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tillana&display=swap);
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css);
+
+.sek1{
+    color:darkgrey;
+    font-size: 20px  ;
+    display: inline-block;
+    background-color: antiquewhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sek1 > p{
+    font-size: 14px ;
+    color:black;
+}
+
+p{
+    font-size: 20px !important;
+}
+
+li{
+    color: blue !important;
+}
+
+.important{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 24px;
+    color:red;
+    text-transform: uppercase;
+}
+
+/* section{
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Tillana', cursive;
+} */
+
+video{
+    height: 500px;
+    width: auto;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26 Paskaita</title>
+    <script src="./data/dataKartu.js"></script>
+    <script src="./data/uzduotysData.js"></script>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header></header>
+   <main>
+    <section><!-- HTML formu validavimas -->
+        <h1>HTML formu validavimas</h1>
+        <p>
+            Formu validavimas yra reikalinas norint nustatyti kazkokius reikalavimus formos laukams(kitaip pasakius, inputu reikalavimus).
+            <br>
+            Formu validacija neleidzia vartotojui pateikti formos, jeigu bent vienas is formos lauku neatitinka nurodytos validacijos
+        </p>
+        <ul>
+            <li>required</li>
+            <li>minlength ir maxlength - text/password/url/email</li>
+            <li>min ir max - number/data/range</li>
+            <li>step - number/rage</li>
+            <li>pattern - password/tel</li>
+            <li>accept - file</li>
+            <li>multiple - file/email</li>
+        </ul>
+        <h3>Pavyzdys</h3>
+        <form id="validationPvz">
+            <div>
+                <label for="name">Vardas:</label>
+                <input type="text" name="name" id="name" required minlength="3" maxlength="15">
+            </div>
+            <div>
+                <label for="age">Amzius:</label>
+                <input type="number" name="age" id="age" min="18" max="99" step="0.5">
+            </div>
+            <div>
+                <label for="phoneNR">Telefonas:</label>
+                <input type="tel" name="phoneNR" id="phoneNR" placeholder="+370 6xx xxxxx" pattern="regex">
+            </div>
+            <div>
+                <label for="foto">Foto</label>
+                <input type="file" name="foto" id="foto" accept=".png">
+            </div>
+            <input type="submit" value="Pateikti">
+        </form>
+    </section>
+    <section><!-- DOM -->
+        <h1>Document Object Model</h1>
+        <h3>Node</h3>
+        <p>
+            Node'as - HTML elementas JS aplinkoje
+        </p>
+        <p>
+            Daug geresnis budas kurti HTML elementus per JS yra n uzpildant tevinio elemento innerHTML'a ar textContent, bet kuriant Nodes kaip kintamuosius ir priskiriant juos vieni kitiems.
+        </p>
+        <h3>Node metodai</h3>
+        <ul>
+            <li>createElement('TagVardas')</li>
+            <li>createTextNode('tekstas...')</li>
+            <li>kam.append(ka,kaDar,kaDar,...) - galima bet ka ir bet kiek</li>
+            <li>kam.appendChild(ka) - galima TIK node elementa</li>
+            <li>kam.setAttribute('name','value')</li>
+            <li>classList
+                <ul>
+                    <li>add('klasesVardas','kitaKlase',...)</li>
+                    <li>remove('vienaKlase','kitaKlase',...)</li>
+                    <li>replace('klasesVardas', 'naujaKlase')</li>
+                    <li>toggle('klasesVardas')</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li></li>
+        </ul>
+        <div id="DOM_pvz">
+
+        </div>
+    </section>
+    <section><!-- PVZ kartu -->
+        <h1>Pvz kartu</h1>
+        <div id="darom">
+            
+        </div>
+    </section>
+    <section><!-- Uzduotys 1 -->
+        <h1>Uzduotis 1</h1>
+        <div id="uzd1"></div>
+    </section>
+    <section><!-- Uzduotys 2  -->
+        <h1>Uzduotis 2</h1>
+        <div id="uzd2"></div>
+    </section>
+    <section><!-- Uzduotys 3  -->
+        <h1>Uzduotis 3</h1>
+        <div id="uzd3"></div>
+    </section>
+    <section><!-- Uzduotys 4  -->
+        <h1>Uzduotis 4</h1>
+        <div id="uzd4"></div>
+    </section>
+   </main>
+   <footer></footer>
+</body>
+</html>

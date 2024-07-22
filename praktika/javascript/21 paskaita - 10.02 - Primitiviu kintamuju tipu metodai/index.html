@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>21 paskaita - math. number. string. .bool Metodai</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/latest/normalize.css"
+    />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <head>
+      <nav></nav>
+    </head>
+    <main>
+      <section> <!-- Intro-->
+        <h1>Metodai</h1>
+        <p>
+            Metodas - jau sukurta funkcija, kuri priklauso kazkuriam specifiniam
+          elementui / kintamajam.
+        </p>
+        <p>
+            Metodai skirti tam, kad pagreitintu/palengvintu programuotoju darba.
+        </p>
+        <p>
+            Property - jau sukurta ir priskirta bei nekintanti reiksme skirta kintamojo tipui.
+        </p>
+      </section>
+      <section> <!-- Boolean  -->
+        <h2>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean"
+            target="_blank">Boolean</a>
+        </h2>
+        <h3>Methods:</h3>
+        <ul>
+          <li>.toString() - pavercia i string tipa</li>
+          <li>.valueOf() - grazina kintamojo reiksme</li>
+        </ul>
+      </section>
+      <section> <!-- Number-->
+        <h2>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number"
+            target="_blank">Number</a>
+        </h2>
+        <h3>Savybes/Properties:</h3>
+        <ul>
+            <li>Number.MAX_SAFE_INTEGER - su skaiciais iki sio skaiciaus, galima atlikti palyginimus</li>
+            <li>Number.MAX_VALUE - vis dar skaiciaus pavidalas, bet neapsakomai didelis. Palyginimai neveikia.</li>
+            <li>Number.POSITIVE_INFINITY - net ne skaiciaus pavidalo, didziausias imanomas skaicius</li>
+            <li>Number.MIN_SAFE_INTEGER - </li>
+            <li>Number.MIN_VALUE</li>
+            <li>Number.NEGATIVE_INFINITY</li>
+            <li>Number.EPSILON - tai maziausias imanomas skaicius einantis po 1</li>
+            <li>Number.NaN - </li>
+        </ul>
+        <h3>Metodai:</h3>
+        <ul>
+            <li>Number.isInteger(skaicius) - tikrina ar skaicius sveikasis</li>
+            <li>Number.isSafeInteger(skaicius/israiska) - tikrina ar skaicius sveikasis ir ne per didelis norint atlikti palyginimo operacijas</li>
+            <li>Number.parseFloat(skaicius ar string) - grazina skaiciu su kableliu, net jei buvo paduotas kaip string.</li>
+            <li>Number.parseInt(skaicius ar string) - grazina skaiciu  sveikaji skaiciu, net jei buvo paduotas kaip string. </li>
+            <li>skaicius.toFixed(number) - grazina skaicius suapvalinta iki nurodyto number skaitmenu po kablelio,stringo pavidalu</li>
+            <li>...</li>
+        </ul>
+      </section>
+      <section> <!-- Math-->
+        <h2>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math" target="_blank">Math</a>
+        </h2>
+        <h3>Properties:</h3>
+        <ul>
+            <li>Math.PI - grazina PI skaiciu su 15 skaitmenu po kablelio</li>
+            <li>...</li>
+        </ul>
+        <h3>Metodai:</h3>
+        <ul>
+            <li>Math.cbrt(skaicius) - grazine skaiciaus kubine sakni.</li>
+            <li>Math.sqrt(skaicius) - grazina skaiciaus kvadratine sakni.</li>
+            <li>Math.ceil(skaicius) - grazina suapvalinta i didesni.</li>
+            <li>Math.floor(skaicius) - suapvalinta i mazesni.</li>
+            <li>Math.round(skaicius) - suapvalina pagal apvalinimo taisykles.</li>
+            <li>Math.hypot(skaicius, skaicius, ...) - grazina skaiciu kvadratu sumos kvadratine sakni</li>
+            <li>Math.max(skaicius,skaicius,skaicius,...) - grazina didziausia skaiciu is duotuju</li>
+            <li>Math.min(skaicius,skaicius,skaicius,...) - grazina maziausia skaiciu is duotuju</li>
+            <li>Math.pow(skaicius, laipsnis) - grazina skaiciu pakelta laipsniu</li>
+            <li>Math.random() - grazina skaiciu tarp 0 ir 1</li>
+            <li>Math.trunc(skaicius) - nukerpa viska po kablelio</li>
+            <li>...</li>
+        </ul>
+      </section>
+      <section> <!-- String-->
+        <h2>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">String</a>
+        </h2>
+        <h3>Properties:</h3>
+        <ul>
+            <li>zodis.length - grazina zodzio ilgi.</li>
+        </ul>
+        <h3>Metodai:</h3>
+        <ul>
+            <li>zodis.at(index) - grazinta simboli esanti nurodytame index, gali skaiciuoti nuo pradzios ar galo.</li>
+            <li>zodis.charAt(index) - grazinta simboli esanti nurodytame index, gali skaiciuoti nuo pradzios. </li>
+            <li>zodis.charCodeAt(index) - grazina simbolio esancio nurodytame indexe UTF-16 koda</li>
+            <li>zodis.concat(zodis2) -  grazina zodis, zodis 2 zodziu jungini, kaip viena stringa. Nemodifikuoja pradinio stringo.</li>
+            <li>zodis.startsWith(simboliai) - patikrina ar zodis prasideda nurodytais simboliais. Grazina true arba false</li>
+            <li>zodis.endsWith(simboliai) - patikrina ar zodis baigiasi nurodytais simboliais. Grazina true arba false </li>
+            <li>zodis.fromCharCode(number, number, number...) - grazina stringa, kuris sudarytas is simboliu gautu pagal ju koda </li>
+            <li>zodis.includes(simboliai) - tikrina ar zodis viduje yra simbolis, grazina true arba false</li>
+            <li>zodis.indexOf(simboliai, startIndex) - grazina pirmojo rasto atitikmens pozicija nuo startIndex</li>
+            <li>zodis.lastindexOf(simboliai) - grazina paskutiniojio rasto atitikmens pozicija</li>
+            <li>zodis.localeCompare(zodis2, locale, options) - palyginima zodis ir zodis 2 pagal nurodyta kalba(locale), su kazkokiais nustatymais</li>
+            <li>zodis.match() - tikrina ar zodis viduje yra nurodytos regex reiksmes. Rastas reiksmes grazina kaip iterable iterator object.</li>
+            <li>zodis.matchAll() - </li>
+            <li>zodis.padStart(number, simbolis) - padaro zodis number ilgio, jeigu sis yra per trumpas, pradzioje prideda symbol, tol kol pasieks reikiama ilgi.</li>
+            <li>zodis.padEnd(number, simbolis) - padaro zodis number ilgio, jeigu sis yra per trumpas, pabaigoje prideda symbol, tol kol pasieks reikiama ilgi.</li>
+            <li>zodis.repeat(number) - grazina nauja stringa kuriame zodis yra pakartotas number kartu</li>
+            <li>zodis.replace(symbol, symbol2) - grazina nauja stringa kuriame zodis pirmasis symbol yra pakeistas symbol2</li>
+            <li>zodis.replaceAll(symbol, symbol2) - grazina nauja stringa kuriame zodis esantys visi symbol yra pakeistas symbol2</li>
+            <li>zodis.search(regex) - ieskoma pagal regex israiska pirmo occurance, grazina pozicija</li>
+            <li>zodis.slice(index, index2) - grazina zodis viduje esancius simbolius tarp index ir index2</li>
+            <li>zodis.substring(index, index2) - grazina zodis viduje esancius simbolius tarp index ir index2</li>
+            <li>zodis.split(skirtukas) - sukarpo zodis pagal skirtukas ir sudeda i masyva </li>
+            <li>zodis.toLowerCase() - grazina zodis kuriame visos raides paverstos mazosiomis</li>
+            <li>zodis.toUpperCase() - grazina zodis kuriame visos raides paverstos didziosiomis</li>
+            <li>zodis.toLocaleLowerCase(locales) -  grazina zodis kuriame visos raides paverstos mazosiomis</li>
+            <li>zodis.toLocaleUpperCase(locales) - grazina zodis kuriame visos raides paverstos didziosiomis</li>
+            <li>zodis.toWellFormed()</li>
+            <li>zodis.trim() naikina tuscius tarpus zodis pradzioje ir pabaigoje</li>
+            <li>zodis.trimStart() - naikina tuscius tarpus zodis pradzioje</li>
+            <li>zodis.trimEnd() - naikina tuscius tarpus zodis pabaigoje</li>
+            <li>...</li>
+        </ul>
+      </section>
+      <section> <!-- Array-->
+
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

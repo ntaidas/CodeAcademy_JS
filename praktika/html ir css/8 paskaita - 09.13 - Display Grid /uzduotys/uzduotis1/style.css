@@ -1,0 +1,58 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 6fr 2fr 2fr 2fr;
+    text-align: center;
+    width: 1300px;
+    height: 1000px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+body > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    background-color: black;
+    color:white;
+}
+
+.menu{
+    background-color: red;
+    color:white;
+    grid-column-start: span 3;
+}
+
+.hero{
+    background-color: blue;
+    color:white;
+    grid-column-start: span 4;
+}
+
+.main{
+    background-color: darkblue;
+    color:white;
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.image{
+    background-color: aquamarine;
+    color:black;
+    grid-column-start: 4;
+}
+
+.extra{
+    background-color: green;
+    color:black;
+    grid-column-start: 4;
+}
+
+.banner{
+    background-color: yellow ;
+    color:black;
+    grid-column-start: span 4;
+}

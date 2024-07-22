@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>27 paskaita</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <header><nav></nav></header>
+    <main>
+      <section id="vardoTask">
+        <!-- Formos ir DOM -->
+        <h1>Forma ir DOM</h1>
+        <form>
+          <div>
+            <label for="vardas">name:</label>
+            <input type="text" name="vardas" id="vardas" />
+          </div>
+          <div>
+            <label for="kartai">Kartai:</label>
+            <input type="number" name="kartai" id="kartai" />
+          </div>
+          <input type="submit" value="Spausdinti" />
+        </form>
+        <div></div>
+      </section>
+      <section id="bilietoTask">
+        <!-- Bilieto isigijimas-->
+        <h1>Kino bilieto isigijimas</h1>
+        <form>
+          <div>
+            <label for="name">Vardas:</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div>
+            <label for="surname">Pavarde</label>
+            <input type="text" id="surname" name="surname" required />
+          </div>
+          <div>
+            <label for="movie">Filmas</label>
+            <input list="movies" id="movie" name="movie" required />
+            <datalist id="movies">
+              <option value="Kurejas"></option>
+              <option value="Makliai"></option>
+              <option value="As gyvas"></option>
+              <option value="Paslaptinga pozemiu karalyste"></option>
+              <option value="Stebuklinogji boruzele"></option>
+              <option value="Laukine sirdis"></option>
+              <option value="Tu man neprimeni"></option>
+              <option value="Pjuklas X"></option>
+              <option value="Egzorcistas"></option>
+              <option value="Tiesiog sekme"></option>
+              <option value="Devintas zingsnis"></option>
+              <option value="Vienuole 2"></option>
+            </datalist>
+          </div>
+          <div>
+            <label for="date">Data ir laikas</label>
+            <input type="datetime-local" id="date" name="date" required />
+          </div>
+          <div>
+            <label for="seat">Vieta</label>
+            <input
+              type="number"
+              name="seat"
+              id="seat"
+              min="0"
+              max="150"
+              required
+            />
+          </div>
+          <div>
+            <label for="standart">2D</label>
+            <input
+              type="radio"
+              name="screen"
+              id="standart"
+              value="standart"
+              checked
+            />
+            <label for="threeD">3D</label>
+            <input type="radio" name="screen" id="threeD" value="3D" />
+          </div>
+          <input type="submit" value="Pirkti" />
+        </form>
+        <h3>Bilietas:</h3>
+      </section>
+      <section id="pirmaUzd">
+        <h1>Uzduotis 1</h1>
+        <form>
+          <div>
+            <label for="foto">Ikelkite paveiksliuka</label>
+            <input type="url" name="foto" id="foto">
+          </div>
+          <div>
+            <label for="title">Pavadinimas</label>
+            <input type="text" name='title' id='title'/>
+          </div>
+          <div>
+            <label for="para">Aprasymas</label>
+            <input type="text" name="para" id="para" />
+          </div>
+          <div>
+            <label for="spalva">Pasirinkite teksto spalva</label>
+            <input type="radio" name="spalva" id="default" value="default" checked>
+            <input type="radio" name="spalva" id="red" value="red">
+            <input type="radio" name="spalva" id="blue" value="blue">
+          </div>
+          <input type="submit" value="Sukurti" />
+
+        </form>
+        <div></div>
+      </section>
+      <section id="antraUzd">
+        <h1>Antra Uzduotis</h1>
+        <form>
+          <label for="x">Iveskite kiek norite stulpeliu</label>
+          <input type="number" name="x" id="x">
+          <label for="y">Iveskite kiek norite eiluciu</label>
+          <input type="number" name="y" id="y">
+          <input type="submit" value="Piesti">
+        </form>
+        <div class="ats">
+        </div>
+      </section>
+      <section id="treciaUzd">
+        <h1>Trecia Uzduotis</h1>
+        <form>
+          <select name="removal" id="removal">
+            <option value="a">A</option>
+            <option value="b">B</option>
+            <option value="c">C</option>
+            <option value="d">D</option>
+            <option value="e">E</option>
+          </select>
+          <input type="submit" value="remove">
+        </form>
+      </section>
+      <section id="ketvirtaUzd">
+        <h1>Ketvirta Uzduotis</h1>
+        <form>
+          <label for="x">X</label>
+          <input type="number" name="x" id="x">
+          <label for="y">Y</label>
+          <input type="number" name="y" id="y">
+          <label for="z">Z</label>
+          <input type="number" name="z" id="z">
+          <input type="submit" value="Skaiciuoti">
+        </form>
+        <div class="ats4"></div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

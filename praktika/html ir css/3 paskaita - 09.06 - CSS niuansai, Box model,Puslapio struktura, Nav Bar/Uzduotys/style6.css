@@ -1,0 +1,70 @@
+
+body{
+    margin: 0;
+}
+
+header > figure{
+    background-image: url("https://1000logos.net/wp-content/uploads/2017/04/Microsoft-logo.jpg");
+    background-size: contain;
+    width: 100%;
+    height: 200px;
+    background-repeat:no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+
+nav{
+    text-align: center;
+}
+
+nav, #about, #contacts{
+    color: white;
+    background-color: green;
+    font-size: 40px;
+    text-decoration-color: white;
+    height: 50px;
+    padding: 15px;
+    line-height: 50px;
+    
+
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-left:10px;
+    margin-right: 10px;
+}
+
+main, footer{
+    margin: 20px;
+}
+
+main > figure{
+    background-image: url('https://wallpapercave.com/wp/wp2754864.jpg');
+    height: 600px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+
+#about, #contacts, p{
+    margin: 10px;
+}
+
+p{
+    font-size: 20px;
+}
+
+footer{
+    background-color: rgba(87, 187, 104, 0.521);
+    margin: 0;
+    padding: 20px;
+}
+
+
+
+

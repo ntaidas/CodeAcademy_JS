@@ -1,0 +1,37 @@
+{
+    "movies":[
+        {
+            "title": "Back to the Future",
+            "genre":"Adventure Comedy Sci-Fi",
+            "tier":"SSS",
+            "releaseDate":1985,
+            "cover":"https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+            "description":"Marty McFly, a 17-year-old high school student, is accidentally sent 30 years into the past in a time-traveling DeLorean invented by his close friend, the maverick scientist Doc Brown.",
+            "imdbRating":8.5
+        },  {
+            "title": "Gran Torino",
+            "genre":"Drama",
+            "tier":"S",
+            "releaseDate":2008,
+            "cover":"https://m.media-amazon.com/images/M/MV5BMTc5NTk2OTU1Nl5BMl5BanBnXkFtZTcwMDc3NjAwMg@@._V1_FMjpg_UX1000_.jpg",
+            "description":"After a Hmong teenager tries to steal his prized 1972 Gran Torino, a disgruntled, prejudiced Korean War veteran seeks to redeem both the boy and himself.",
+            "imdbRating":8.1
+        },  {
+            "title": "Groundhog Day",
+            "genre":"Comedy Drama Fantasy",
+            "tier":"S",
+            "releaseDate":1993,
+            "cover":"https://m.media-amazon.com/images/M/MV5BZWIxNzM5YzQtY2FmMS00Yjc3LWI1ZjUtNGVjMjMzZTIxZTIxXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+            "description":"A narcissistic, self-centered weatherman finds himself in a time loop on Groundhog Day.",
+            "imdbRating":8.0
+        },  {
+            "title": "The Dark Knight",
+            "genre":"Action Crime Drama",
+            "tier":"S",
+            "releaseDate":2008,
+            "cover":"https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg",
+            "description":"When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+            "imdbRating":9.0
+        }
+    ]
+}

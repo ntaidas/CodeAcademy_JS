@@ -1,0 +1,93 @@
+main{
+    background-color: gainsboro;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.card{
+    width: 90%;
+    background-color: white;
+    margin: 5px auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    box-shadow: 0px 2px 4px black;
+    text-align: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+}
+
+.addTask{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 90%;
+}
+
+input, button{
+    display: block;
+    height: 30px;
+
+}
+
+input{
+    box-sizing: border-box;
+    border: none;
+    width: 70%;
+    background-color: aliceblue;
+}
+
+button{
+    box-sizing: border-box;
+    background-color: rgb(85, 45, 151);
+    color: white;
+    padding: 2px 20px;
+    width: 30%;
+    
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    background-color: white;
+    margin: 10px;
+    padding-left: 15%;
+    padding-right: 10%;
+    box-shadow: 0px 2px 4px black;
+    list-style: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    a
+}
+
+ul > :nth-child(2){
+    text-decoration:line-through;
+}
+
+/* ul > :nth-child(2)::before{
+    content:"";
+    background-image: ;
+} */
+
+ul> li > span , li > svg {
+    display: block;
+}
+
+svg{
+    color: red;
+    align-self: center;
+}
+
+/* ul > :nth-child(2)::before{
+    display: inline-block;
+    content: "";
+    vertical-align: -.125em;
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>");
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  } */

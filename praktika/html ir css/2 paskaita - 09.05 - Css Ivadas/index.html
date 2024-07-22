@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Ivadas</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        height: 7000px;
+        background-color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>   <!-- Css Rasymo budai-->
+      <h1>Css rasymo budai</h1>
+      <ul>
+        <li>inline - rasoma elemento viduje</li>
+        <li>internal - head viduje style tag</li>
+        <li>external - kitas failas link</li>
+      </ul>
+      <div style="display:flex; justify-content:space-around; gap:10px">
+        <div>
+            <h2>Inline</h2>
+            <p style="color: red; font-size: 20px">
+              Tago atidaromojoje dalyje naudojamas atributas style, kuriam
+              priskiriami kazkoki linijiniai styliai(turi siek tiek kitokia
+              sintakse)
+            </p>
+        </div>
+        <div>
+            <h2>Internal</h2>
+            <p class="raudonasTekstas">
+              Rasomas head dalyje su tagu style, viduje naudojamas normali css
+              sintakse: selektorius + lauztiniai skliausteliai + stiliai
+            </p>
+        </div>
+
+        <div>
+            <h2>External</h2>
+            <p class="didelisTekstas melynasTekstas">
+              Rasomas atskirame css faile, su pilna CSS sintakse. Failas yra
+              prijungiamas prie norimo html ir gali buti daugiau nei vienas failas.
+              Prioritetas bus skiriamas paskutiniam failui
+            </p>
+        </div>
+      </div>
+    </div>
+    <div>   <!-- CSS selektoriai-->
+      <h1><a href="https://www.w3schools.com/cssref/css_selectors.php" target="_blank">Css selektoriai</a></h1>
+      <ul>
+        <li>Tagas - elemento selectorius</li>
+        <li>
+          Klase - html klase arba klases priskiriama elementui kaip atributas
+          Pati css klase CSS aprasoma po tasko(.), be tarpu. Po tarpo skaitoma kaip
+          kita klase.
+        </li>
+        <li id="unikalusID">Id - HTML ID gali buti priskirtas elementui kaip atributas. GALI BUTI TIK VIENAS pradeda grotelemis (#)</li>
+      </ul>
+    </div>
+    <div>   <!-- Pavadinimu kurimas-->
+        <h1>Pavadinimu kurimas</h1>
+            <p>pavadinime negali buti tarpu</p>
+            <ul>
+                <li>camelCase - sekantis zodis rasomas is didziosios</li>
+                <li>snake_case - sekantys zodziai rasomi uz apatinio bruksnelio</li>
+                <li>kebab-case - zodziai resomi po bruksnelio</li>
+            </ul>
+    </div>
+    <div>   <!--Stiliu testavimas-->
+        <h1 class="klase1">Lorem, ipsum.</h1>
+        <h2 class="klase2">Lorem, ipsum dolor.</h2>
+        <p class="klase3">Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+    <div>   <!-- Displays-->
+        <ul>
+            <li>
+                Inline - Linijinis -
+            </li>
+            <li>
+                Block - Blokinis
+            </li>
+            <li>
+                Inline-Block - Linijinis Blokinis
+            </li>
+        </ul>
+        <div> <!-- Inline-->
+            <h1>Inline</h1>
+            <p>
+                Elementai gali issidestyti vienas salia kito, nes jie uzima tik tiek vietos kiek reikalauja turinys ju viduje. Elementams negalima priskirti aukscio ir plocio nustatymu.
+            </p>
+            <div>
+                <div class="box inline">1</div>
+                <div class="box inline">2</div>
+                <div class="box inline">3</div>
+            </div>
+        </div>
+        <div> <!-- Block-->
+            <h1>Block</h1>
+            <p>Elementams galima priskirti ploti ir auksti. Elementai negali issidestyti vienas salia kito</p>
+            <div>
+                <div class="box block">1</div>
+                <div class="box block">2</div>
+                <div class="box block">3</div>
+            </div>
+
+        </div>
+        <div> <!-- Inline-block-->
+            <h1>Inline-Block</h1>
+            <p>
+                Elemtams galima priskirti aukscio ir plocio nustatymus.Elementai issidesto vienas salia kito.
+            </p>
+            <div>
+                <div class="box inlineBlock">1</div>
+                <div class="box inlineBlock">2</div>
+                <div class="box inlineBlock">3</div>
+            </div>
+        </div>
+    </div>
+    <div>   <!-- Veliavos-->
+        <h1>Veliavos</h1>
+        <div>
+            <h2>Lietuva</h2>
+            <div class="flag">
+                <div class="yellow horizontal"></div>
+                <div class="green horizontal"></div>
+                <div class="red horizontal"></div>
+            </div>
+            <h2>Naujoji Meksika</h2>
+            <div class="flag v">
+                <div class="green vertical"></div>
+                <div class="white vertical herbas">
+                    <img src="https://www.lrs.lt/sip/getFile?guid=82b8ad4c-d666-4dec-a4d1-9609fbd45136" alt="lietuvos herbas">
+                </div>
+                <div class="red vertical"></div>
+            </div>
+
+            <h2>France</h2>
+            <div class="flag v">
+                <div class="blue vertical"></div>
+                <div class="white vertical"></div>
+                <div class="red vertical"></div>
+            </div>
+        </div>
+
+    </div>
+    <div>   <!-- Spalvos-->
+        <h1><a href="https://imagecolorpicker.com/en" target="_blank">Colors</a></h1>
+        <ul>
+            <li>Name - 140 spalvu</li>
+            <li>RGB(A) - 17m spalvu </li>
+            <li>HEX - 17m spalvu</li>
+            <li>HSL</li>
+            <li>HWB</li>
+        </ul>
+        <div> <!--Names-->
+            <h1>color names</h1>
+            <p>Norint priskirti spalva reikia rasyto jos pavadinima</p>
+        </div>
+        <div> <!--RGB(A)-->
+            <h1>RGB(A) color codes</h1>
+            <p>
+                RGB(a) - Red Green Blue(Alpha). Turi reiksme nuo 0 iki 255.
+                Nurodos spalvos kieki galine spalvoje.
+                Alpha - nurodos spalvos permatomuma ir jos reiksme gali but nuo 0 iki 1(tukstantaja(0.001))
+            </p>
+            <p>Norint valdyti spalvos permatomuma, reikia dadeti ketvirta skaiciu ir simboli (RGB -> RGBA) ir ((0,0,0) -> (0,0,0,0.5))</p>
+            <p>
+                Blue - RGB(0,0,225)
+                Yellow - RGB(255,255,0)
+                Black - RGB(0,0,0)
+                White - RGB(255,255,255)
+            </p>
+        </div>
+        <div> <!-- HEX-->
+            <h1>Hex color codes</h1>
+            <p>
+                HEXdecimal - 16'taine skaiciavimo sistema.
+                Skaiciuoti iki 16: nuo 0 1 2 3 4 5 6 7 8 9 a b c d e f
+                Skaiciai: 17 === 11 ; 32 === 20 ; 100 === 64 ; 232 === e8 ; ...
+            </p>
+            <p>Hex spalvos koda sudaro groteles ir 6 simboliai. Galima gale prideti dar 2 simbolius isgauti permatomuma</p>
+            <p>Pavyzdziai:
+                Melyna - #0000ff
+                Raudona - #ff0000
+                zalia - #00ff00
+                balta - #ffffff
+                Permatomumas: 
+                Raudona(permatoma) - #ff000099
+                Raudona(nematoma) - #ff000000
+                Raudona(matoma) - #ff0000ff
+            </p>
+            <p>
+                Hex spalvos kodas gali buti trumpinamas, jeigu vienos spalvos kiekio simboliai yra vienodi. (ff - f) 
+                Raudona: #f00
+                Zalia: #0f0
+                Melyna: #00f
+            </p>
+        </div>
+    </div>
+    <div>   <!-- Positions-->
+        <h1><a href="https://www.w3schools.com/cssref/pr_class_position.php" target="_blank">Positions</a></h1>
+        <p>Suteikus elementui kazkuri position nustatyma, jam suteikiame galimybe naudotis:
+            top, right, bottom, left, z-index nustatymais.
+        </p>
+        <ul>
+            <li>Static</li>
+            <li>Relative</li>
+            <li>Absolute</li>
+            <li>Fixed</li>
+            <li>Sticky</li>
+        </ul>
+        <div> <!-- Static-->
+            <h2>Static</h2>
+            <p>
+            Static yra vienintele pozicija, kuri nei suteikia kazkokiu galimybiu is saves, nei igalina naudotis top, right, bottom, left, z-index nustatymais.
+            </p>
+            <div class="box inlineBlock static">2</div>
+            <div class="box inlineBlock static">3</div>
+            <div class="box inlineBlock static">4</div>
+            <div class="box inlineBlock static">1</div>
+        </div>
+        <div> <!-- Relative-->
+            <h2>Relative</h2>
+            <p>
+                Suteikia galimybe naudotis top, right, bottom, left, z-index nustatymais.
+                Dazniausia naudojama nustatyti z-index.
+                Kitas relative pozicijos naudojimo atvejis yra nurodyti jo viduje esancio absolute pozicija turincio elemento ribas.
+            </p>
+            <div class="box inlineBlock static">1</div>
+            <div class="box inlineBlock relative left">2</div>
+            <div class="box inlineBlock static top">3</div>
+            <div class="box inlineBlock static">4</div>
+        </div>
+        <div class="relative"> <!-- Absolute -->
+            <h2>Absolute</h2>
+            <p>
+                Suteikus elemntui absoliuciaja pozicija jis iseina is puslapio tekmes(neitakoja kitu elementu pozicijos puslapyje) ir igauna galimybe naudotis top, right, bottom, left, z-index nustatymais.
+                Top, right, bottom, left, z-index nustatymai atitraukia ji nuo artimiausio parent elemento su relative pozicija.
+            </p>
+            <div class="box inlineBlock static">1</div>
+            <div class="box inlineBlock static">2</div>
+            <div class="box inlineBlock absolute top">3</div>
+            <div class="box inlineBlock static">4</div>
+        </div>
+        <div> <!-- Fixed-->
+            <h2>Fixed</h2>
+            <p>Suteikus elementui Fixed position jis iseina is puslapio tekmes (neitakoja kitu elementu pozicijos puslapyje) fiksuojasi savo nustatytoje ar numatytoje pozicijoje ir igauna galimybe naudotis top, right, bottom, left, z-index nustatymais.
+            Top, right, bottom, left, z-index nustatymai nurodo per koki atstuma nuo puslapio krastu (viewport) elementas turi buti atitrauktas ir jis juda kartu su ekranu(scrollinant nepabega).
+            </p>
+            <div class="box inlineBlock static">1</div>
+            <div class="box inlineBlock fixed top">2</div>
+            <div class="box inlineBlock static">3</div>
+            <div class="box inlineBlock static">4</div>
+        </div>
+        <div> <!-- Sticky-->
+            <h2>Sticky</h2>
+            <p>Suteikus elementui sticky pozicija jam suteikiama galimybe naudotis  top, right, bottom, left, z-index nustatymais. Suteikus  top, right, bottom, left, z-index nustatymus nurodai per koki atstuma nuo ekrano krastu elementas prilimpa ir juda kol gali savo parent containerio ribose</p>
+            <div class="aukstasDiv">
+                <div class="box inlineBlock static">1</div>
+                <div class="box inlineBlock static">2</div>
+                <div class="box inlineBlock sticky top">3</div>
+                <div class="box inlineBlock static">4</div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

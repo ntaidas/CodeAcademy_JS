@@ -1,0 +1,61 @@
+.bilietas{
+    border: 1px solid black;
+    display: flex;
+}
+
+.redText{
+    color:red;
+}
+.blueText{
+    color:blue;
+}
+
+#default{
+    accent-color: black;
+}
+
+#red{
+    accent-color:red;
+}
+
+#pirmaUzd > div{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card{
+    box-sizing: border-box;
+    border: 1px solid black;
+    text-align: center;
+    width: 405px;
+    height: 620px;
+    overflow:auto;
+    
+}
+.card > h1{
+    font-size: 3rem;
+    margin: 0 auto;
+}
+.card > img{
+    width: 400px;
+}
+.card > p {
+    font-size: 1.5rem;
+    margin: 5%;
+    word-wrap: break-word;
+    min-height: 2em;
+    
+}
+
+.ats{
+    display: flex;
+    justify-content: center;
+}
+
+td{
+    border: 1px solid black;
+    width: 5rem;
+    height: 3rem;
+}

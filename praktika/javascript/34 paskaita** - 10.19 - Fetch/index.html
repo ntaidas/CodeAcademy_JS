@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>34 paskaita - Fetch</title>
+    <script src="./mainPeople.js" type="module"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <section><!--API-->
+        <h1>API-Application Programing Interface</h1>
+        <p>
+            Uzklausos. Isiuncia jusu uzklausa is aplikacijos(front-end) i serveri(back-end).Ir jei viskas tvarkoje grazina duomenis pagal jusu uzklausa.
+            Jei kazkas negerai, grazina atitinkama error zinute.
+        </p>
+        <p></p>
+      </section>
+      <section><!--Fetch-->
+        <h1>Fetch</h1>
+        <p>
+            Komanda/funkcija/metodas, kurios pagalba galime siusti uzklausas i serveri.
+        </p>
+        <h3>Fetch veikimo eiga</h3>
+        <ol>
+            <li>Fetchinti(siusti uzklausa)duomenis kazkuriuo metodu
+                <ul>
+                    <li>GET - gauti informacija</li>
+                    <li>POST - pateikti informacija</li>
+                    <li>DELETE - trinti informacija</li>
+                    <li>PATCH - redaguoti informacija</li>
+                    <li>PUT - redaguoti informacija</li>
+                </ul>
+            </li>
+            <li>Apdoroti gauta informacija(vykdosi kai nera error )</li>
+            <li>Naudoti gauta informacija(vykdosi kai nera error )</li>
+            <li>Pagaunam ir kazka atliekam su error(vykdosi tik error atveju)</li>
+            <li>Galiausiai (finally) dar kazka atliekam( vykdosi betkokiu atveju)</li>
+        </ol>
+      </section>
+      <section id="rndm">
+        <h1><span>Random User</span></h1>
+        <div id="display"></div>
+      </section>
+      <section id="barborosPrekes">
+        <h1>Papildyti prekes</h1>
+        <form>
+          <label for="title">Pavadinimas</label>
+          <input type="text" name="title" id="title">
+          <label for="price">Kaina</label>
+          <input type="number" name="price" id="price" min="0" step="0.01">
+          <label for="picture">Nuotrauka</label>
+          <input type="url" name="picture" id="picture">
+          <input type="submit" value="Ikelti">
+        </form>
+        <hr>
+        <h1>Barboros prekes</h1>
+        <div id="prekes"></div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

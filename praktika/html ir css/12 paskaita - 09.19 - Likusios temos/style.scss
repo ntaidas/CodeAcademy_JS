@@ -1,0 +1,26 @@
+body {
+  color: red;
+}
+
+$kraujoSpalva: rgb(126, 16, 16);
+
+body > main {
+    > :nth-child(3) {
+        background-color: antiquewhite;
+        > h1 {
+          color: orange;
+          font-size: 50px;
+        }
+        > p {
+          color: blue;
+          font-size: 20px;
+        }
+      }
+    > section:nth-child(4){
+        background-color: aliceblue;
+    }
+}
+
+li{
+    color: $kraujoSpalva;
+}

@@ -1,0 +1,162 @@
+h1,
+h2 {
+  text-align: center;
+}
+p {
+  background-color: aqua;
+}
+
+.raudonasTekstas {
+  color: red;
+}
+
+.melynasTekstas {
+  color: blue;
+}
+
+.didelisTekstas {
+  font-size: 32px;
+}
+
+#unikalusID {
+  color: green;
+}
+
+.klase1 {
+  text-decoration: underline dashed red 5px;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+}
+
+.klase2 {
+  text-shadow: 2px 2px 5px red;
+}
+
+.klase3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-style: oblique -80deg;
+}
+
+.box {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  box-shadow: 5px 5px 10px red;
+  /* margin:auto;
+    line-height: 100px; */
+}
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.inlineBlock{
+    display: inline-block;
+}
+
+.flag{
+    width: 500px;
+    height: 200px;
+    margin: 10px;
+    border: 2px black solid;
+}
+
+.v{
+  display: flex;
+}
+
+.horizontal{
+  height: 66px
+}
+
+.vertical{
+  width: 33.33%;
+  height: 200px;
+}
+
+.herbas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.red{
+    background-color: red;
+}
+
+.white{
+    background-color: white;
+}
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color:#0000ff;
+}
+
+img{
+    height: 40px;
+    width: 40px;
+}
+/* cia taip komentuojama CSS */
+
+/* positions */
+
+.static{
+    position: static;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.fixed{
+    position: fixed;
+}
+
+.sticky{
+    position: sticky;
+}
+
+.aukstasDiv{
+    height: 500px;
+    border: 1px solid black;
+}
+
+.top{
+ top: 100px
+}
+
+.right{
+    right:50px
+}
+
+.bottom{
+    bottom: 20px
+}
+
+.left{
+    left: 70px
+}
+
+.z-index5{
+    z-index: 5;
+}
+
+.z-index10{
+    z-index: 10;
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23 paskaita</title>
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <main>
+        <section><!--Ternary ir Logical &&-->
+            <h1>Salygos(fancy)</h1>
+            <div> <!-- Logical &&-->
+                <h3><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND" target="_blank">Logical &&</a></h3>
+                <p>
+                    Loginis AND(&&) veikia tokiu principu, kad jis iesko melo. Tai reiskiasi, kad jeigu jam is sonu yra salyga(kaireje)ir veiksmas/ai(desineje). jis patikrines salyga sprendzia ar verta tikrinti(vykdyti) desine puse, kur yra veiksmas/ai.
+                </p>
+                <p>Pvz.: (JS kode 7-10 eilutes)</p>
+            </div>
+            <div><!-- Ternary ? :-->
+                <h3>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator" target="_blank">Ternary ? :</a>
+                </h3>
+                <p>
+                    Ternary salyga veikia kaip paprasta if_elseIf_else salyga, tik vietoj
+                    if_elseIf_else yra naudojami ? ir : zenkliukai. Ternary salyga dazniausiai naudojama tik esant if ir else atvejams.
+                    Ternary salyga rasoma taip: salyga ? jeiTrueKodas:falseKodas;
+                </p>
+                <p>
+                    Pvz.: (JS kode 13-24 eilutes)
+                </p>
+
+            </div>
+        </section>
+        <section><!-- Destrukturizavimas-->
+            <h1>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank">Destrukturizavimas</a>
+            </h1>
+            <p>
+                Destrukturizuoti - tai isskaldyti kazka i atskiras dalis.
+            </p>
+            <p>
+                Destrukturizuoti galima parametrus, masyvus ir objektus.
+            </p>
+            <p>
+                Pvz.: (JS kode 27-84 eilutes)
+            </p>
+            <p>
+                Video:
+                <a href="" target="_blank">WebDevSimplifiend</a>
+                <a href="https://www.youtube.com/watch?v=UgEaJBz3bjY&t=136s" target="_blank">FireShip</a>
+                <a href="" target="_blank">freeCodeCamp</a>
+            </p>
+        </section>
+        <section><!-- Iteraciniai masyvu metodai-->
+            <h1>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#iterative_methods" target="_blank">
+                    Masyvu Iteraciniai metodai
+                </a>
+            </h1>
+            <p>Iteraciniai masyvu metodai - metodai kur sukant cikla per masyva, galima kazka atlikti su kiekvienu to masyvo elementu</p>
+            <div><!-- forEach-->
+                <h3>forEach()</h3>
+                <h4>Syntax:</h4>
+                <hr>
+                <p>
+                    masyvas.forEach((elementas)=>{veiksmai...})<br>
+                    masyvas.forEach((elementas, i)=>{veiksmai...})<br>
+                    masyvas.forEach((elementasm, i, array)=>{veiksmai...})<br>
+                </p>
+                <hr>
+                <p>
+                    forEach metodas - suka cikla per visa masyva ir kiekvienos iteracijos metu atlieka kazkokius veiksmus su tos iteracijos masyvo elementu. forEach negali grazinti reiksmes(neturi return) ir negali buti sustabdytas(neveikia break).
+                </p>
+            </div>
+            <div><!-- filter-->
+                <h3>filter()</h3>
+                <h4>Syntax:</h4>
+                <hr>
+                <p>
+                    masyvas.filter((elementas)=>{veiksmai... salyga})<br>
+                    masyvas.filter((elementas,i)=>{veiksmai... salyga})<br>
+                    masyvas.filter((elementas,i,array)=>{veiksmai... salyga})<br>
+                </p>
+                <hr>
+                <p>
+                    Filter metodas - suka cikla per masyva ir kiekvienos iteracijos metu tikrina ar iteracijos masyvo elementas atitinka salyga. Jeigu salyga grazina true - tas elementas yra grazinamas kaip naujo masyvo dalis; jei grazina false - nera grazinamas kaip naujo masyvo dalis.
+                </p>
+            </div>
+            <div><!--  map -->
+                <h3>map()</h3>
+                <h4>Syntax:</h4>
+                <hr>
+                <p>
+                    masyvas.map((elementas)=>{veiksmai... naujasPavidalas})<br>
+                    masyvas.map((elementas,i)=>{veiksmai... naujasPavidalas})<br>
+                    masyvas.map((elementas,i,array)=>{veiksmai... naujasPavidalas})<br>
+                </p>
+                <hr>
+                <p>
+                    Map metodas - suka cikla per visa masyva ir kiekvienos iteracijos metu kazkaip mutuoja iteracijos masyvo elementa ir grazina ji nauju pavidalu.
+                </p>
+            </div>
+            <div><!-- reduce -->
+                <h3>reduce()</h3>
+                <h4>Syntax:</h4>
+                <hr>
+                <p>
+                    masyvas.reduce((accumulator, currentValue)=>{veiksmai...})<br>
+                    masyvas.reduce((accumulator, currentValue, i)=>{veiksmai...})<br>
+                    masyvas.reduce((accumulator, currentValue, i, array)=>{veiksmai...})<br>
+                    masyvas.reduce((accumulator, currentValue)=>{veiksmai...}, initialValue)<br>
+                    masyvas.reduce((accumulator, currentValue, i)=>{veiksmai...}, initialValue)<br>
+                    masyvas.reduce((accumulator, currentValue, i, array)=>{veiksmai...}, initialValue)<br>
+                </p>
+                <hr>
+                <p>
+                    Reduce metodas - suka cilka per visa masyva ir kiekvienos iteracijos metu su akumuliatoriumi(accumulator)altieka kazkoki veiksma su dabartines iteracijos masyvo elementu(currentValue). Metodo gale grazina viena reiksme, kuri yra kazkoks junginys visu reiksmiu. <br>
+                    Jei nurodyta pradine reiksme (initialValue), tuomet pirmosios iteracijos metu akumuliatorius yra pradine reiksme(initialValue), o pirmasis masyvo elementas yra dabartine reiksme(currentValue).
+                </p>
+            </div>
+            <div><!-- reduceRight -->
+                <h3>reduceRight()</h3>
+                <p>
+                    Lygiai tas pats kas ir reduce, tik kad is kito galo(right to left(rtl)).
+                </p>
+            </div>
+            <div><!-- flatMap -->
+                <h3>flatMap()</h3>
+                <p>
+                    Apjungtas flat(1) ir map metodai. Neturi galimybes keisti flat lygmens. Visada yra flat(1).
+                </p>
+            </div>
+            <div><!-- some -->
+                <h3>some()</h3>
+                <p>
+                    Some metodas - suka cikla per visa masyva ir kiekvienos iteracijos metu tikrina ar bent vienas iteracijos masyvo elementas atitinka nurodyta salyga. Jeigu bent vienas elementas atitinka nurodyta salyga - metodas grazina true. <br>
+                    Jei nei vienas elementas neatitinka nurodytos salygos - metodas grazina false.
+                </p>
+            </div>
+            <div><!-- every -->
+                <h3>every()</h3>
+                <p> 
+                    Every metodas - suka cikla per visa masyva ir kiekvienos iteracijos metu tikrina ar bent kiekvienas iteracijos masyvo elementas atitinka nurodyta salyga. Jeigu  kiekvienas elementas atitinka nurodyta salyga - metodas grazina true. <br>
+                    Jei bent vienas elementas neatitinka nurodytos salygos - metodas grazina false.</p>
+            </div>
+            <div><!--find -->
+                <h3>find()</h3>
+                <p>
+                    Find metodas- suka cikla per visa masyva ir kiekvienos iteracijos metu tikrina ar iteracijos masyvo elementas atitinka nurodyta salyga. Jeigu masyvo elementas atitinka nurodyta salyga - jis  grazina ta ELEMENTA.Jei nei vienas neatitinka nurodytos salygos - grazinamas undefined.
+                </p>
+            </div>
+            <div><!--findLast -->
+                <h3>findLast()</h3>
+                <p>
+                    FindLast daro ta pati ka find() tik nuo kito galo(rtl)
+                </p>
+            </div>
+            <div><!--findIndex -->
+                <h3>findIndex()</h3>
+                <p>
+                    Find metodas- suka cikla per visa masyva ir kiekvienos iteracijos metu tikrina ar iteracijos masyvo elementas atitinka nurodyta salyga. Jeigu masyvo elementas atitinka nurodyta salyga - jis  grazina to elemento INDEKSA.Jei nei vienas neatitinka nurodytos salygos - grazinamas (-1).
+                </p>
+            </div>
+            <div><!--findLastIndex -->
+                <h3>findLastIndex()</h3>
+                <p>
+                    FindLast daro ta pati ka findIndex() tik nuo kito galo(rtl)
+                </p>
+            </div>
+            <div><!-- -->
+                <h3></h3>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

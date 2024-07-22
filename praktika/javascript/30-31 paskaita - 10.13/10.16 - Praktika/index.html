@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30 paskaita</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./main.js" type="module"></script>
+  </head>
+  <body>
+    <section>
+      <div id="container"></div>
+    </section>
+    <section id="uzd2">
+      <form>
+        <label for="fullName"></label>
+        <input type="text" name="fullName" id="fullName" />
+        <input type="submit" value="submit" />
+      </form>
+      <table>
+        <thead>
+          <th>Name</th>
+          <th>Surname</th>
+        </thead>
+        <tbody id="listOfNames"></tbody>
+      </table>
+    </section>
+    <section id="uzd3">
+      <form>
+        <div>
+            <label for="tripDestinationName">Keliones tikslas</label>
+            <input type="text" name="tripDestinationName" id="tripDestinationName" />
+        </div>
+        <div>
+            <label for="tripLocation">Keliones lokacija</label>
+            <input type="text" name="tripLocation" id="tripLocation" />
+        </div>
+        <div>
+            <label for="tripLength">Trukme (minutemis)</label>
+            <input type="number" name="tripLength" id="tripLength"/>
+        </div>
+        <div>
+            <label for="tripPrice">Kaina pinigais</label>
+            <input type="number" name="tripPrice" id="tripPrice" />
+        </div>
+        <div>
+            <label for="image">Nuotrauka</label>
+            <input type="url" name="image" id="image">
+        </div>
+        <input type="submit" value="submit">
+      </form>
+      <div class="display"></div>
+    </section>
+  </body>
+</html>

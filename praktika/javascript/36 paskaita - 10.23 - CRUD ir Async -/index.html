@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>36 paskaita - Async ir CRUD</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- Async (teoriškai) -->
+      <h1>Asinchroninis programavimas</h1>
+      <p>
+        Asinchroninio programavimo idėja yra ta, kad kol vykdosi vienas kodas, galima leisti vykdytis ir kitam kodui. Kitaip pasakius, atlikinėti keletą veiksmų vienu metu.
+      </p>
+      <ol>
+        <li>setTimeout()</li>
+        <li>async ir await</li>
+        <li>try catch finally</li>
+        <li>Promise (resolve, reject)</li>
+        <li>then catch finally</li>
+      </ol>
+      <div> <!-- async ir await -->
+        <h3>Async ir await</h3>
+        <p>
+          Rašant kodą asinchroniškai kartais prireikia luktelti atsakymų iš prieštai buvusių funkcijų. Tam, kad sulauktume atsakymo, reikia uždelsti kodą. Tai galima padaryti su setTimeout(callback, time);<br>
+          Persistengiant su setTimeout'ais ar kitais callback'ais sukuriamas vadinimasis callback Hell, to pasekoje nukenčia kodo skaitomumas, suprantamumas ir tęstinumas/tobulinimas.<br>
+          Tam, kad išvengtume vadinamojo callback Hell, mes galime kurti asinchronines funkcijas. Jos kuriamos prirašant raktinį žodį "async".<br>
+          Norint nurodyti, kad reikia kažkurio veiksmo atsakymo asinchroninėje funkcijoje sulaukti, galime prieš tą veiksmą prirašyti raktinį žodį "await", kuris nurodo, kad reikia laukto atsakymo iš to veiksmo, prieš vykdant tolimesnį kodą.
+        </p>
+        <h3>Syntax</h3>
+        <p>
+          async function name(){
+            veiksmai1...
+            await veiksmai2...
+            veiksmai3 priklausantys nuo veiksmai2...
+          }<br>
+          let name = async () => {
+            veiksmai1...
+            await veiksmai2...
+            veiksmai3 priklausantys nuo veiksmai2...
+          }
+        </p>
+      </div>
+      <div> <!-- try catch finally -->
+        <h3>Try Catch Finally</h3>
+        <p>
+          Try, Catch ir Finally naudojami norint aprašyti error'ų valdymą gražia, patogia ir efektyvia sintakse.<br>
+          Try bloke vykdomas kodas. Jeigu Try bloke įvyksta klaida - vykdomas Catch blokas. Galiausiai vykdomas Finally blokas.<br>
+          Net jeigu Try bloke įvyksta klaida, kodas Try bloke einantis už to error'o, visviena vykdysis. 
+        </p>
+        <h3>Syntax</h3>
+        <p>
+          try{ code } catch{ errorInCode } finally{ doWhatever }
+        </p>
+      </div>
+      <div> <!-- Promise ir then catch finally-->
+        <h3>Promise ir then catch finally</h3>
+        <p>
+          Rašant asinchroninį kodą, naudojami Promises.<br>
+          Promise'as pažada grąžinti kažkokį atsakymą, kurio Promiso iškvietimo momentu mes negauname.<br>
+          Promise mums arba grąžins atsakymą, kurį yra pažadėjęs (resolve'ins) arba dėl kažkokios priežasties norimo atsakymo negrąžins, grąžins užklausos atmetimo informaciją (reject).<br>
+          Kadangi Promise mums atsakymo negrąžina iš karto, mes su tuo laukiamu atsakymu veiksmus galime atlikti tik tuomet, kada jis yra grąžinamas (then). Jeigu grąžinamas yra error'as (reject) arba then bloke įvyksta klaida, ją galime pagauti (catch) ir kažką su juo atlikti. O galų gale vykdyti kažką betkokiu atveju (finally).
+        </p>
+        <h3>Syntax</h3>
+        <p>
+          Promise((resolve, reject) => {
+            if(good){
+              resolve('answer')
+            } else {
+              reject('error')
+            }
+          })
+        </p>
+      </div>
+    </section>
+    <section id="cRUd"> <!-- CRUD (update)-->
+      <h1>cRUd</h1>
+      <div>
+        <!-- <div class="kortele">
+          <h3>HTML ir CSS</h3>
+          <p>Išlaikytas/Neišlaikytas</p>
+        </div> -->
+      </div>
+    </section>
+    <section id="cRUd_cars">
+      <h1>cRUd Cars</h1>
+      <div>
+        <!-- <div>
+          <h3>Marke Modelis</h3>
+          <img src="https://i.ytimg.com/vi/mjHNDx6EIQw/hqdefault.jpg" alt="">
+          <div>
+            <p>Metai:2000</p>
+            <p>Spalva: <span>orange</span></p>
+            <p>Daužta/Nedaužta</p>
+          </div>
+          <button>Edit</button>
+        </div> -->
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>

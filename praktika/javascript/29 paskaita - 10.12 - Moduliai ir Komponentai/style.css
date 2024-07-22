@@ -1,0 +1,70 @@
+section#cars{
+    background-image: linear-gradient(
+        to right top,
+        blue,
+        orange
+
+    );
+    padding: 20px 50px;
+    
+}
+
+section#cars > h1{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 0;
+}
+
+#carCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#carCards .card{
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.123);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+#carCards .card>h1{
+    text-align: center;
+}
+
+#carCards .card>img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+#carCards .card>div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+
+}
+
+#carCards .card>div >p:last-child{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+#carCards .card span.colorBox{
+    display: inline-block;
+    width: 40px;
+    height: 16px;
+    /* position: relative;
+    top: 2px; */
+    transform: translateY(4px);
+}
+
+

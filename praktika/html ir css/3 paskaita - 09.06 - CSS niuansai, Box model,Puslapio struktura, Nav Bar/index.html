@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3 paskaita - 09.06 - CSS niuansai, Box model,Puslapio struktura </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#semantics">Semantics</a>
+        <a href="#box">Box Model</a>
+        <a href="#selectors">Selectors</a>
+        <a href="#fonai">Backgrounds</a>
+      </nav>
+    </header>
+    <main>
+      <section id="semantics"> <!-- Semantics and Page Layout-->
+        <h1>Semantics and Page Layout</h1>
+        <p>
+          Kuriant internetine svetaine/aplikacija reiketu naudoti semantinius
+          tagus, tam kad butu tvarkinga puslapio struktura ir joje programuojant
+          butu lengviau susigaudyti.
+        </p>
+        <ul>
+          <li>
+            HEADER - puslapio virsus skirtas logo, menu, login, sign In ir
+            pns...
+          </li>
+          <ul>
+            <li>nav - navigacija, skirta menu</li>
+          </ul>
+          <li>MAIN - pagrindinis turinys</li>
+          <ul>
+            <li>section - puslapio dalis skirta aprasyti vienai temai</li>
+            <li>article - puslapio dalis skirta aprasyti vienai temai</li>
+            <li>
+              figure - skirtas talpinti image, video, audio, map, iframe, gif...
+            </li>
+            <li>aside - sonine juosta(dazniausia naudojama papildomam menu)</li>
+          </ul>
+          <li>
+            FOOTER - copyright, terms and use, cookies, privacy policy,partners,
+            social links ir etc...
+          </li>
+        </ul>
+      </section>
+      <section id="box"> <!-- Box Model-->  
+        <h1>Box Model</h1>
+        <p>
+          Kiekvienas elementas turi savo box modeli, kuris susideda is zemiau
+          isvardintu elementu, nuo vidaus i isore
+        </p>
+        <ol>
+          <li>Content - turinys</li>
+          <li>Padding - pamusalas</li>
+          <li>Border - remelis</li>
+          <li>Margin - parastes</li>
+          <li>Position - poziciju atitraukimai</li>
+        </ol>
+        <div class="boxModel">Box Model Pavyzdys</div>
+        <div>
+            <div> <!--padding-->
+                <h2>Padding</h2>
+                <p>
+                    Padding nustato per koki atstuma turinys yra atitraukiamas nuo remelio.
+                </p>
+                <ul>
+                    <li>padding-top: 10px;</li>
+                    <li>padding-right: 10px;</li>
+                    <li>padding-bottom: 10px;</li>
+                    <li>padding-left: 10px;</li>
+                    <li>padding: 5px(visi);</li>
+                    <li>padding: 10px(virsus, apacia) 5px(sonai);</li>
+                    <li>padding: 20px(virsus) 10px(sonai) 20px(apacia);</li>
+                    <li>padding: 10px(virus) 20px(desine) 10px(apacia) 20px(kaire) ;</li>
+                </ul>
+            </div>
+            <div> <!-- margin-->
+                <h2>Margin</h2>
+                <p>
+                    Marginas atitraukia elementa nuo aplinkiniu elementu.
+                </p>
+                <ul>
+                    <li>margin-top: 10px;</li>
+                    <li>margin-right: 10px;</li>
+                    <li>margin-bottom: 10px;</li>
+                    <li>margin-left: 10px;</li>
+                    <li>margin: 5px(visi);</li>
+                    <li>margin: 10px(virsus, apacia) 5px(sonai);</li>
+                    <li>margin: 20px(virsus) 10px(sonai) 20px(apacia);</li>
+                    <li>margin: 10px(virus) 20px(desine) 10px(apacia) 20px(kaire);</li>
+                    <li>margin: 0 auto (centruoja); - turi buti blokinis ir tureti declaruota ploti.</li>
+                </ul>
+            </div>
+            <div> <!-- border-->
+                <h2>Border</h2>
+                <p>
+                    Remelis kazkokio tipo, storio ir spalvos juosta skirianti padding ir margin.
+                </p>
+                <ul>
+                    <li>border:1px(storis) solid(stilius) red(spalva);</li>
+                    <ul>
+                        <li>border-width:1px;</li>
+                        <ul>
+                            <li>border-width: 10px 20px 30px; 40px</li>
+                            <li>border-top-width:1px;</li>
+                        </ul>
+                        <li>border-style:solid;</li>
+                        <ul>
+                            <li>border-right-style:solid;</li>
+                            <li>border-style:solid dotted riged dotted;</li>
+                        </ul>
+                        <li>border-color:red;</li>
+                        <ul>
+                            <li>border-right-color:red;</li>
+                            <li>border-color:red blue green black;</li>
+                        </ul>
+                    </ul>
+                    <li>border-radius: 5px(atstumas tarp krastu) gali but px arba procentai(max50%)</li>
+                    <ul>
+                        <li>border-top-left-radius: 10px arba galima daryti 2 (10px 20px) ar daugiau, ar per ( <strong>/</strong>  ) del idomesnes strukturos; Veikia panasiai kaip ir padding ir margin.</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+      </section>
+      <section id="selectors" > <!-- Selectors-->
+        <h1 class="textColorBlue">Selectors</h1>
+        <ul class="selectorsList">
+            <li>Elementas/tag</li>
+            <li>Class</li>
+            <li>ID</li>
+            <li>selector1 selector2 - viduje, nesvarbu kaip giliai</li>
+            <li>selector1 > selector2 - elementas elemente, direct child. Nesibaigia ties vienu ir gali nestint kiek reikia.</li>
+            <li>element.class - tik elementas su ta klase</li>
+            <li>element#id -  tik elementas su tik tuo id</li>
+            <li>selector, selector - nurodyti selectoriai   gaus vienodus nustatymus. Galima visaip maisyti.</li>
+            <li class="sitas">selector1 + selector2 - is karto sekantis elementas tame paciame lygmenyje</li>
+            <li>selector1 ~ selector2 - nesvarbu kaip toli <strong>einantiems</strong> tame paciame lygmenyje, uz elemento</li>
+            <li>selector:hover - pelei uzejus ant selectinto elemento </li>
+            <li> * - parenka viska</li>
+        </ul>
+        <div class="idomu">
+            <h1>Hello world!</h1>
+            <p>We said that already...</p>
+          </div>
+      </section>
+      <section id="fonai"> <!-- Backgrounds-->
+        <h2>Backgrounds</h2>
+        <div class="fonas1"><p>Labas</p></div>
+        <div class="fonas2"><p>Labas</p></div>
+        <div class="fonas3"></div>
+        <div class="fonas4">
+            <div class="transperantBG"></div>
+            <div class="content">Labas</div>
+        </div>
+        <div class="fonas5"></div>
+      </section>
+
+    </main>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+body{
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.712);
+    color: white;
+}
+
+th{
+    border: 1px solid white;
+    width: 405px;
+    height: 215px;
+    text-align: center;
+    background-color: gray;
+}
+
+tr > td:first-child{
+    color: orange;
+    font-size: 40px;
+}
+tr > td:last-child{
+    color: greenyellow;
+}
+
+tr > td:nth-child(2){
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px;
+}
+
+tbody > tr:nth-child(even){
+    background-color: rgba(19, 18, 18, 0.678);
+}
+
+td{
+    border: 1px solid white;
+    width: 405px;
+    height: 450px;
+    text-align: center;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+
+}
+a:visited{
+    color: white;
+}
+
+tbody > tr#row:hover, tbody > tr#row:hover > td:last-child, tbody > tr#row:hover > td:first-child,tbody > tr#row:hover > td:nth-child(2)>a{
+    background-color: sandybrown;
+    color: blue;
+    font-size: 45px;
+}
+
+.colOne{
+    position: relative;
+}
+.colOne::before,.colTwo::before,.colThree::before,.colFour::before,.colFive::before{
+    content: '';
+    position: absolute;
+    right: 0px;
+    background-color: rgba(250, 217, 215, 0.267);
+    z-index: -1;
+    
+}
+.colOne:hover::before,.colTwo:hover::before,.colThree:hover::before,.colFour:hover::before,.colFive:hover::before{
+    top: -500%;
+    width: 100%;
+    height: 2005%;
+    overflow:visible;
+}
+
+
+.colTwo{
+    position: relative;
+}
+.colThree{
+    position: relative;
+}
+.colFour{
+    position: relative;
+}
+.colFive{
+    position: relative;
+}
+
+table{
+    overflow: hidden;
+}

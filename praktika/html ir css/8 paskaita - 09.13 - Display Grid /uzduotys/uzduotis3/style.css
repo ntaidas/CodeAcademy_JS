@@ -1,0 +1,32 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+}
+
+main > div {
+    background-color: salmon;
+    color: white;
+    text-align: center;
+}
+
+.two{
+    grid-column: span 2;
+}
+
+.three{
+    grid-column: span 3;
+}
+
+.four{
+    grid-column: span 4;
+}
+
+.six{
+    grid-column: span 6;
+}
+
+.eight{
+    grid-column: span 8;
+}

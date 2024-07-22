@@ -1,0 +1,36 @@
+
+     post && 
+    (
+      <StyledPostCard>
+        <div>
+          <h1>{post.title}</h1>
+          <p>{post.content}</p>
+        </div>
+        <div>
+          <div>
+            <p>{post.score}</p>
+            <button>Up</button>
+            <button>Down</button>
+          </div>
+          {loggedInUser.id === post.authorId ? (
+            <div>
+              {" "}
+              <Link
+                to={`/edit/${post.id}`}
+              >
+                Edit
+              </Link>
+              <button
+                onClick={() => {
+                  setPosts({ type: PostActionTypes.deletePost, id: id });
+                  navigate("/posts");
+                }}
+              >
+                Delete
+              </button>
+            </div>
+          ) : loggedInUser ? (
+            <button>Reply</button>
+          ) : null}
+        </div>
+      </StyledPostCard>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>29 paskaita</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" type="module"></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section><!--Moduliai-->
+        <h1>Moduliai</h1>
+        <p>
+          Moduliai yra atskiri kodo fragmentai iskaidyti skirtinguose failuose. 
+        </p>
+          Tuose moduliuose gali buti ivairus kodas. Nuo duomenu iki funkciju, klasiu, metodu ir ect...
+        <p>
+          JS klases turi buti atskiri moduliai. Kitaip pasakius - vienam faile neturetu buti aprasytos kelios klases. <br>
+          HTMLe prigungtas scriptas turi tureti nurodyta modulio tipa. <br>
+          HTML failas, turi buti paleistas kaip serveris, nes kitu atveju neleis vykdyti JS failo kodo.
+        </p>
+        <h2>Export ir Import</h2>
+        <p>
+          Failuose esanti informacija gali buti iskeliama (exportuojama) ir galima kazkokia informacija isikelti is kito failo(importuoti)
+        </p>
+        <h3>Export</h3>
+        <p>
+          Informacija galima eksportuoti dvejais budais. <br>
+          1) export default  - numatytasis/pagrindinis exportas gali buti tik vienas viename faile. <br>
+          2) export - papildomas exportas/ai, kuriu gali buti daug viename faile. 
+        </p>
+        <h3>Importas</h3>
+        <p>
+          Informacija gali importuoti ivairiais budais. <br>
+          1) import sameNameAsExportDefault from ./someFile  - gaunama Default export informacija <br>
+          2) import differentNameAsExportDefault from ./someFile - gaunama Default export informacija <br>
+          3) import { sameNameAsExport, sameNameAsExport2, ... } from ./someFile - gaunama nurodyto pavadinimo export informacija (ne export default, o paprasto export)  <br>
+          4) import { sameNameAsExport as norimasNaujasPavadinimas, sameNameAsExport2, ... } from ./someFile - gaunama nurodyto pavadinimo export informacija, kuria siame faile vadinsi kitu sugalvotu pavadinimu. <br>
+          5) import pagrindinisImport,{ nePgrImport, nePgrImport2 as kitasPavadinimas, ...} from ./someFile - galima vienu importu importuoti ir export default ir tiesiog export. <br>
+
+        </p>
+      </section>
+      <section id="cars"><!-- Car cards make with Class Components-->
+        <h1>Car Cards</h1>
+        <div id="carCards"></div>
+      </section>
+      <section><!---->
+
+      </section>
+      <section><!---->
+
+      </section>
+      <section><!---->
+
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

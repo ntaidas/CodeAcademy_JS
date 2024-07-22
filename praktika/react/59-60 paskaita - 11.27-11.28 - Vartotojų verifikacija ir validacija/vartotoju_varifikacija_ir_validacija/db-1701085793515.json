@@ -1,0 +1,91 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "userName": "Katinelis2000",
+      "email": "kitkat@gmail.com",
+      "password": "miaumiau20#",
+      "age": 23,
+      "registerDate": "2020-10-27",
+      "profilePicture": "https://www.shutterstock.com/image-photo/profile-view-cute-young-red-600nw-2242222153.jpg"
+    },
+    {
+      "id": 2,
+      "userName": "Jhonny",
+      "email": "J.Bravo@gmail.com",
+      "password": "heyMamma@69",
+      "age": 30,
+      "registerDate": "2022-01-10",
+      "profilePicture": "https://i5.walmartimages.com/seo/Funko-Pop-Animation-Johnny-Bravo-Johnny-with-Mirror-Com-Vinyl-Figure_cc707dce-b67c-403c-a8d2-5462cc735080.db2c948261e485099d08c8775d24eed2.png"
+    }
+  ],
+  "videoGames": [
+    {
+      "id": 1,
+      "name": "Baldur's Gate 3",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202302/2321/3098481c9164bb5f33069b37e49fba1a572ea3b89971ee7b.jpg",
+      "price": "59.99",
+      "description": "Baldur's Gate is a series of role-playing video games set in the Forgotten Realms Dungeons & Dragons campaign setting. The game has spawned two series, known as the Bhaalspawn Saga and the Dark Alliance, both taking place mostly within the Western Heartlands, but the Bhaalspawn Saga extends to Amn and Tethyr.",
+      "releaseDate": "2023-08-03",
+      "genre": [
+        "RPG"
+      ],
+      "publishers": [
+        "Larian Studios",
+        "Beamdog",
+        "Interplay Entertainment"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Don't Starve Together",
+      "image": "https://i0.wp.com/tryrolling.com/wp-content/uploads/2019/06/steamworkshop_webupload_previewfile_437795317_preview.png",
+      "price": "5.09",
+      "description": "Fight, Farm, Build and Explore Together in the standalone multiplayer expansion to the uncompromising wilderness survival game, Don't Starve.",
+      "releaseDate": "2014-12-15",
+      "genre": [
+        "RPG",
+        "Indie",
+        "Fighting"
+      ],
+      "publishers": [
+        "Klei Entertainment"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Dead Cells",
+      "image": "https://upload.wikimedia.org/wikipedia/en/1/1f/Dead_cells_cover_art.png",
+      "price": "24.99",
+      "description": "Dead Cells is a 2018 roguelike-Metroidvania game developed and published by Motion Twin. The player takes the role of an amorphous creature called the Prisoner. As the Prisoner, the player must fight their way out of a diseased island in order to slay the island's King.",
+      "releaseDate": "2018-08-07",
+      "genre": [
+        "Adventure",
+        "Action Roguelike",
+        "Single-player",
+        "2D"
+      ],
+      "publishers": [
+        "Motion Twin"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Alan Wake 2",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202305/2420/c3daf3037feb797d9e71b81618e3b5ff3ff1f9609db5a4a2.png",
+      "price": "49.99",
+      "description": "Alan Wake 2 is a 2023 survival horror game developed by Remedy Entertainment and published by Epic Games Publishing.",
+      "releaseDate": "2023-10-27",
+      "genre": [
+        "Single-player",
+        "Survival",
+        "Horror",
+        "Shooter"
+      ],
+      "publishers": [
+        "Epic Games"
+      ]
+    }
+    
+  ]
+}

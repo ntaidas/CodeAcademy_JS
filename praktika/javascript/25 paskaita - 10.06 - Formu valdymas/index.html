@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>25 paskaita</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section id="formHTML">
+        <h1>Formų tag'ai ir atributai</h1>
+        <div class="lists">
+          <div>
+            <h3>Tag'ai</h3>
+            <ul>
+              <li>form</li>
+              <li>input</li>
+              <li>textarea</li>
+              <li>select</li>
+              <li>option</li>
+              <li>label</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Atributai</h3>
+            <ul>
+              <li>
+                type
+                <ul>
+                  <li>text</li>
+                  <li>password</li>
+                  <li>number</li>
+                  <li>email</li>
+                  <li>date</li>
+                  <li>url</li>
+                  <li>range</li>
+                  <li>checkbox</li>
+                  <li>radio</li>
+                  <li>submit</li>
+                </ul>
+              </li>
+              <li>placeholder</li>
+              <li>for</li>
+              <li>id</li>
+              <li>name</li>
+              <li>value</li>
+              <li>cols</li>
+              <li>rows</li>
+              <li>disabled</li>
+              <li>selected</li>
+              <li>checked</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="formP">
+          <h2>Pavyzdys</h2>
+          <form>
+            <div>
+              <label for="">Test</label>
+              <input type="text" id="" name="inputText" />
+              <input type="radio" id="" name="" checked />
+              <input type="checkbox" id="" name="" checked />
+            </div>
+            <div>
+              <!-- <label></label> -->
+              <!-- kartais -->
+              <textarea
+                placeholder="test"
+                rows=""
+                cols=""
+                id=""
+                name="textareaText"
+              ></textarea>
+            </div>
+            <div>
+              <!-- <label></label> -->
+              <!-- kartais -->
+              <select name="selectStuff" id="">
+                <option value="0">test0</option>
+                <option value="1" selected>test1</option>
+                <option value="2">test2</option>
+                <option value="3" disabled>test3</option>
+              </select>
+            </div>
+            <input type="submit" value="Pateikti Formą" />
+          </form>
+          <div id="formPvzResult"></div>
+        </div>
+      </section>
+      <section id="pvzKartu">
+        <form>
+          <input type="number" name="nr1" id="nr1" />
+          <span>+</span>
+          <input type="number" name="nr2" id="nr2" />
+          <input type="submit" value="=" />
+        </form>
+        <span id="pvzKartuResult"></span>
+      </section>
+      <section id="uzd1e" class="formP">
+        <!--Uzduotis 1-->
+        <h1>Uzduotis 1e</h1>
+        <form action="">
+          <input type="number" name="a" id="a" />
+          <select name="op" id="op">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="**">**power</option>
+            <option value="root">root</option>
+            <option value="remainder">remainder</option>
+          </select>
+          <input type="number" name="b" id="b" />
+          <input type="submit" value="=" />
+        </form>
+        <div class="ats"></div>
+      </section>
+      <section id="uzd2" class="formP"><!--Uzduotis 2-->
+        <h1>Uzduotis 2</h1>
+        <form>
+          <input type="number" name="amzius" id="amzius">
+          <input type="submit" value="Suzinoti Kaina">
+        </form>
+        <div class="ats"></div>
+      </section>
+      <section id="uzd3" class="formP"><!--Uzduotis 3-->
+        <h1>Uzduotis 3</h1>
+        <form >
+          <input type="number" name="amzius" id="amzius">
+          <label for="teistas">Teistas?</label>
+          <input type="checkbox" name="teistas" id="teistas">
+
+          <input type="submit" value="I kariuomene">
+        </form>
+        <h1 class="ats"></h1>
+      </section>
+      <section id="uzd4" class="formP"><!--Uzduotis 4-->
+        <h1>Uzduotis 4</h1>
+        <form >
+          <label for="age">Kiek metu dirbate?</label>
+          <input type="number" name="age" id="age">
+          <input type="submit" value="Apskaiciuoti">
+        </form>
+        <p class="ats"></p>
+      </section>
+      <section id="uzd5" class="formP"><!--Uzduotis 5-->
+      <h1>Uzduotis 5</h1>
+      <form>
+        <label for="metai">Iveskite metus ir suzinokite ar jie kelemieji!</label>
+        <input type="number" name="metai" id="metai">
+        <input type="submit" value="Atskleiskite tiesa!">
+      </form>
+      <p class="ats">Numaukite paslapties syda!</p>
+      </section>
+      <section id="uzd6" class="formP"><!--Uzduotis 6-->
+        <h1>Uzduotis 6</h1>
+        <form>
+          <label for="temp">Iveskite temperatura C</label>
+          <input type="number" name="temp" id="temp">
+          <input type="submit" value="Paversti i F">
+        </form>
+        <p class="ats"></p>
+      </section>
+      <section id="uzd7" class="formP"><!--Uzduotis 7-->
+      <h1>Uzduotis 7</h1>
+      <form>
+        <label for="pastas"></label>
+        <input type="email" name="pastas" id="pastas">
+        <label for="sutinku"> Sutinku gauti spama</label>
+        <input type="checkbox" name="sutinku" id="sutinku">
+        <input type="submit" value="Registruotis">
+      </form>
+      <p class="ats"></p>
+      </section>
+      <section id="uzd8" class="formP"><!--Uzduotis 8-->
+      <h1>Uzduotis 8</h1>
+      <form>
+        <label for="vardas">Iveskite varda</label>
+        <input type="text" name="vardas" id="vardas">
+        <label for="kartai">Magiskas skaicius</label>
+        <input type="number" name="kartai" id="kartai">
+        <input type="submit" value="Varom!">
+      </form>
+      <ul class="ats"></ul>
+      </section>
+      <section id="uzd9" class="formP"><!--Uzduotis 9-->
+      <h1>Uzduotis 9</h1>
+      <form>
+        <label for="kiekis">Iveskite ilgi!</label>
+        <input type="number" name="kiekis" id="kiekis">
+        <input type="submit" value="Piesti">
+      </form>
+      <div class="ats"></div>
+      </section>
+      <section id="uzd10" class="formP"><!--Uzduotis 10 ****-->
+        <h1>***Uzduotis 10***</h1>
+        <form>
+          <input type="text" name="vardass" id="vardass">
+        </form>
+        <ol class="ats"></ol>
+      </section>
+      <section id="uzd11" class="formP"><!--Uzduotis 11-->
+      <h1>Uzduotis 11</h1>
+      <h3>Kuris arciau 100?</h3>
+      <form>
+        <label>Iveskite du skaicius</label>
+        <input type="number" name="a" id="a">
+        <input type="number" name="b" id="b">
+        <input type="submit" value="Skaiciuojam">
+      </form>
+      <p class="ats"></p>
+      </section>
+      <section id="uzd12" class="formP"><!--Uzduotis 12-->
+        <h1>Uzduotis 12 ir 13</h1>
+        <form>
+          <label for="spek">Spek skaiciu nuo 1 iki 5</label>
+          <input type="number" name="spek" id="spek">
+          <input type="submit" value="Speti!">
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

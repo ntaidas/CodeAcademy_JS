@@ -1,0 +1,101 @@
+.boxModel{
+    width: 300px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+section > ul{
+    color:red 
+}
+
+.textColorBlue{
+    color:blue;
+}
+
+h1.textColorBlue{
+    text-align: center;
+}
+
+.sitas + li{
+    color: green;
+}
+
+li:hover{
+    background-color: black;
+    color: white;
+}
+
+.idomu{
+    border: 1px solid black;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.idomu > p {
+    display: none;
+}
+
+.idomu:hover > p{
+    display: initial;
+}
+
+/* FONAI */
+
+#fonai > div{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    font-size: 100px;
+    line-height: 200px;
+}
+
+.fonas1{
+    background-color: rgba(117, 247, 100, 0.5);
+}
+
+.fonas2{
+    background-image: url('./img/photo-1483232539664-d89822fb5d3e.jpeg');
+    color: aliceblue;
+    /* background-repeat:no-repeat ; */
+    background-size: cover;
+    /* background-position: center; */
+}
+
+.fonas3{
+    background-image: url(./img/background-dimension-3d-graphic-message-board-for-text-and-message-design-line-shadow-for-modern-web-design-free-vector.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.fonas4{
+    background-image: url(./img/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.fonas4 > .transperantBG{
+    /* height: 100%;
+    width: 100%; */
+    background-color: rgba(173, 44, 44, 0.5);
+    position: absolute;
+    top:0; bottom: 0;
+    left: 0; right: 0;
+}
+
+.fonas4 > div.content{
+    position: relative;
+    z-index: 1;
+}
+
+.fonas5{
+    background-image: linear-gradient(
+        to bottom right,
+        red,
+        blue
+    );
+}

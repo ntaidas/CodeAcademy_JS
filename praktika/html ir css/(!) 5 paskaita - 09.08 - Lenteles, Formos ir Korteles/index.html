@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenteles, Formos ir korteles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <section><!-- Lenteles -->
+            <h1>Tables</h1>
+            <ul>
+                <li>table - pagrindinis lenteles tagas</li>
+                <li>thead - nurodyti lenteles stulpeliu pavadinimai</li>
+                <li>tbody - pateikiami duomenys</li>
+                <li>tfoot - pakartoja thead arba duomenu suvestine</li>
+                <li>tr - table row - lenteles eilutes</li>
+                <li>th - table heading - lenteles eiluciu/stulpeliu pavadinimai</li>
+                <li>td- table data- lenteles duomenys</li>
+                <li>caption - lenteles pavadinimas</li>
+                <li>colgroup - lenteles stulpeliu grupe</li>
+                <li>col - lenteles grupe</li>
+            </ul>
+            <p></p>
+            <table class="saldainiai">
+                <caption>Pavyzdine lentele(saldainiai)</caption>
+                <thead>
+                    <tr>
+                        <th>Saldainio pavadinimas</th>
+                        <th>Skonis</th>
+                        <th>Kaina/kg</th>
+                        <th>Patinka?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Karvute</td>
+                        <td>Karamele</td>
+                        <td>17</td>
+                        <td>Taip</td>
+                    </tr>
+                    <tr>
+                        <td>Sweet Drops</td>
+                        <td>Kieta karamele</td>
+                        <td>10</td>
+                        <td>Taip</td>
+                    </tr>
+                    <tr>
+                        <td>Karuna</td>
+                        <td>Sokoladinis vafliukas</td>
+                        <td>20</td>
+                        <td>Taip</td>
+                    </tr>
+                    <tr>
+                        <td>Anis</td>
+                        <td>Anyziniai</td>
+                        <td>5</td>
+                        <td>Ne</td>
+                    </tr>
+                    <tr>
+                        <td>Nomeda</td>
+                        <td>Dzeminis vafliukas</td>
+                        <td>6</td>
+                        <td>Ne</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Kainos vidurkis:</td>
+                        <td colspan="2">13.4 euru/kg</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section><!-- Formos -->
+            <h1>Form</h1>
+            <h3>Tags</h3>
+            <ul>
+                <li>form - pagrindinis formos tagas</li>
+                <li>input - ivesties laukas</li>
+                <li>textarea- skirtas didesniam teksto kiekiui ivasties laukas</li>
+                <li>select - parent elementas option tagui</li>
+                <li>option - pasirinkimo variantas</li>
+                <li>label - etikete ivesties laukui</li>
+            </ul>
+            <h3>Attributes</h3>
+            <ul>
+                <li>for - sujungia label su ivesties lauku turinciu tokia id reiksme, kaip label for</li>
+                <li>id - formos ivesciu laukuose skirtas sujungti ivesties laukus su label</li>
+                <li>name - nurodo inputo varda (naudinga JS)...</li>
+                <li> type - nurodo inputo tipa
+                    <ul>
+                        <li>button - mygtukas</li>
+                        <li>checkbox - daugelio pasirinkimu variantas</li>
+                        <li>radio - vieno is daugelio pasirinkimu variantas</li>
+                        <li>color - suteikia spalvu palete</li>
+                        <li>date - datos pasirinkimas(menesis diena metai)</li>
+                        <li>datetime- laiko pasirinkimas(menesis diena metai valanda minute)</li>
+                        <li>month - menesio pasirinkimas (menesis metai)</li>
+                        <li>week - savaites pasirinkimas(savaite(skaicius) metai)</li>
+                        <li>time - laiko pasirinkimas (valanda minute)</li>
+                        <li>email - elektroninis pastas</li>
+                        <li>file - failo pasirinkimas is PC</li>
+                        <li>hidden - nerodomas</li>
+                        <li>image - paveiksliukas pateikiantis forma</li>
+                        <li>submit - formos pateikimas</li>
+                        <li>number - skaicius</li>
+                        <li>password - slaptazodis, paslepia ivesti</li>
+                        <li>text - tekstas</li>
+                        <li>range - slankiojanti juosta</li>
+                        <li>reset - mugtukas kuris isvalys visus formos laukus</li>
+                        <li>search - paieskos laukas</li>
+                        <li>tel - telefono numeris</li>
+                        <li>url - nuoroda</li>
+                    </ul>
+                </li>
+                <li>cols - nurodo textarea ploti simboliais/li>
+                <li>rows - nurodo textarea auskti simboliais</li>
+                <li>placeholder - tekstas input/textarea viduje kuris isnyksta pradedant pildyti inputa</li>
+                <li>value - inputo reiksme perduodama JS</li>
+                <li>selected - option numatytasis pasirinkimas</li>
+                <li>disabled - optiono neaktyvus pasirinkimas</li>
+                <li></li>
+            </ul>
+            <form>
+                <div>
+                    <label for="vardas">Iveskite Savo varda</label>
+                    <input type="text" name="vardas" id="vardas">
+                </div>
+                <div>
+                    <label for="pavarde">Iveskite Savo pavarde</label>
+                    <input type="text" name="pavarde" id="pavarde">
+                </div>
+                <div>
+                    <!-- <label for="komentaras">Komentaras</label> -->
+                    <textarea name="komentaras" id="komentaras" cols="30" rows="3" placeholder="Komentaras..."></textarea>
+                </div>
+                <div>
+                    <label for="filmas">Pasirinkite megstamiausia filma</label>
+                    <select name="filmas" id="filmas">
+                        <option value="0" disabled>Avatar</option>
+                        <option value="1">Harry Potter</option>
+                        <option value="2">Lord of the Rings</option>
+                        <option value="fastAndFurious" selected>Fast and Furious</option>
+                    </select>
+                </div>
+                <input type="submit" value="pateikti forma">
+                <button type="submit">Pateikti forma</button>
+                <!-- <input type="image" src="submitBtn.png" alt="pateikti forma"> -->
+
+            </form>
+        </section>
+        <section><!-- Korteles -->
+            <h1>Korteles</h1>
+            <div class="korteles">
+                <div class="profilio">
+                    <h1>Vardas pavarde</h1>
+                    <img src="./images/74d7b05c3476e062ca7c26452ffb22cb.jpg" alt="profile picture">
+                    <p>Pareigos</p>
+                    <div class="kontaktai"> 
+                        <p>Telefonas</p>
+                        <p>El pastas</p>
+                    </div>
+                    <div class="social"> <!-- socialines nuorodos-->
+                        <a href="https://www.google.com/search?q=facebook" target="_blank" class="bi bi-facebook"></a>
+                        <a href="https://www.google.com/search?q=instagram" target="_blank" class="bi bi-instagram"></a>
+                        <a href="https://www.google.com/search?q=linkedin" target="_blank" class="bi bi-linkedin"></a>
+                    </div>
+                </div>
+                <div class="infoCard">
+                    <img src="./images/Cliff Retreat by Alex Hogrefe_visualizingarchitecture.com_photo -® Alex Hogrefe_visualizingarchitecture.com.webp" alt="">
+                    <div class="info">
+                        <h1>Pavadinimas</h1>
+                        <h4>Vieta</h4>
+                        <p>Aprasymas Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim asperiores quaerat alias temporibus fugiat dolore suscipit necessitatibus vel facere quidem, similique, illum architecto reiciendis soluta itaque iure unde quia rem.</p>
+                    </div>
+                </div>
+                <div class="coolCard">
+                    <div class="info">
+                        <h1>Pavadinimas</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde laboriosam voluptatibus beatae nisi corporis, id consectetur in architecto cum autem et natus animi officia iure dolores minima placeat quae modi?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

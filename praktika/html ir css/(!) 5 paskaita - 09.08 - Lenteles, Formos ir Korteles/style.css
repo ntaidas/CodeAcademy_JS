@@ -1,0 +1,125 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+.saldainiai{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.saldainiai th, .saldainiai td{
+    border: 1px solid black;
+}
+
+.saldainiai th:hover, .saldainiai td:hover{
+    background-color: aqua;
+}
+
+textarea{
+    resize: none;
+}
+
+.korteles > div{
+    display: inline-block;
+}
+
+.profilio{
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px black;
+}
+
+.profilio > h1,.profilio > p{
+    text-align: center;
+    margin: 0;
+    
+}
+
+.profilio > p{
+    font-weight: bold;
+}
+
+.profilio > img{
+    width: 200px;
+    height: auto;
+}
+
+
+.profilio > .kontaktai > p{
+    display: inline-block;
+    margin: 5px 0 10px 25px;
+}
+
+.profilio > .social{
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.profilio > .social > a{
+    padding: 3px;
+}
+
+.infoCard{
+    border: 1px solid black;
+    width: 600px;
+    height: 300px;
+    margin: 0;
+    position: relative;
+}
+
+.infoCard > img{
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.infoCard > .info {
+    display: inline-block;
+    width: 29%;
+    height: 300px;
+    position: relative;
+    bottom: 15px;
+    
+}
+
+.infoCard > .info > p, .infoCard > .info > h1, .infoCard > .info > h4{
+    margin:0;
+    margin-bottom: 2px;
+}
+
+.infoCard > .info > h4{
+    margin-bottom: 20px;
+}
+
+
+.coolCard{
+    width: 600px;
+    height: 300px;
+    border: 1px solid rgb(250, 113, 1);
+    background-image: url(https://picjumbo.com/wp-content/uploads/amazing-stone-path-in-forest-free-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.coolCard > .info{
+    width: 50%;
+    height: 90%;
+    background-color: rgba(128, 128, 128, 0.384);
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    opacity: 0;
+    transition: 100ms;
+    
+}
+
+.coolCard > .info > h1{
+    text-align: center;
+}
+
+.coolCard > .info > p{
+    text-align: justify;
+}
+
+.coolCard:hover > .info{
+    opacity: 1;
+}

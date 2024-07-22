@@ -1,0 +1,86 @@
+.header,
+.menu,
+.main,
+.hero {
+  color: white;
+}
+.header {
+  background-color: black;
+}
+.menu {
+  background-color: red;
+}
+.hero {
+  background-color: blue;
+}
+.main {
+  background-color: darkblue;
+}
+.banner {
+  background-color: yellow;
+}
+.extra {
+  background-color: green;
+}
+.image {
+  background-color: teal;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr;
+  font-size: 2em;
+}
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 4fr 4fr 2fr 2fr;
+  }
+  .header,
+  .hero {
+    grid-column: span 4;
+  }
+  .menu {
+    grid-area: 3/1/6/2;
+  }
+  .main,
+  .banner {
+    grid-column: span 3;
+  }
+  .extra {
+    grid-column: span 2;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    grid-template-rows: 1fr 6fr 2fr 2fr 2fr;
+  }
+  .header {
+    grid-column: span 1;
+  }
+  .menu {
+    grid-area: 1/2/2/5;
+  }
+  .main {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  .image {
+    grid-area: 3/4/4/5;
+  }
+  .extra {
+    grid-area: 4/4/5/5 ;
+  }
+  .banner {
+    grid-column: span 4;
+  }
+}

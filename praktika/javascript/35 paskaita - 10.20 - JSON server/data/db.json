@@ -1,0 +1,77 @@
+{
+  "zmones": [
+    {
+      "id": 1,
+      "vardas": "Aidas",
+      "pavarde": "Dovydenas",
+      "gimimoMetai": 1991,
+      "pailsejes": true
+    },
+    {
+      "id": 2,
+      "vardas": "Marius",
+      "pavarde": "Katinas",
+      "gimimoMetai": 1993,
+      "pailsejes": true
+    },
+    {
+      "id": 3,
+      "vardas": "Gintarija",
+      "pavarde": "Kasparaviciute",
+      "gimimoMetai": 1997,
+      "pailsejes": true
+    },
+    {
+      "id": 4,
+      "vardas": "Reda",
+      "pavarde": "Dovydeniene",
+      "gimimoMetai": 1974,
+      "pailsejes": true
+    },
+    {
+      "id": 5,
+      "vardas": "Valdas",
+      "pavarde": "Dovydenas",
+      "gimimoMetai": 1976,
+      "pailsejes": true
+    },
+    {
+      "id": 6,
+      "vardas": "Otas",
+      "pavarde": "Dovydenas",
+      "gimimoMetai": 1999,
+      "pailsejes": true
+    }
+  ],
+  "masinos": [
+    {
+      "id": 1,
+      "marke": "nissan",
+      "modelis": "skyline",
+      "metai": 1999
+    },
+    {
+      "id": 2,
+      "marke": "toyota",
+      "modelis": "trueno",
+      "metai": 1986
+    },
+    {
+      "id": 3,
+      "marke": "opel",
+      "modelis": "astra",
+      "metai": 1991
+    },
+    {
+      "id": 4,
+      "marke": "subaru",
+      "modelis": "impreza",
+      "metai": 1997
+    },
+    {
+      "id": 1697788940952,
+      "marke": "Fiat",
+      "modelis": "Sena"
+    }
+  ]
+}

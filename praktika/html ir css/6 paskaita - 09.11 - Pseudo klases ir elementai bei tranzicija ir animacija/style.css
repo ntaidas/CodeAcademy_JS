@@ -1,0 +1,49 @@
+
+
+.trans{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    border: 1px solid red;
+    transition: all linear 2s;
+}
+
+.trans:hover{
+    width:500px;
+    background-color: red;
+    transform: translateX(200px);
+}
+
+.anim{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    border: 1px solid red;
+
+    /* animation-name: bandymas;
+    animation-duration: 5s;
+    animation-delay: 100ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-fill-mode: none;
+    animation-composition: accumulate; */
+    animation: bandymas 10s infinite alternate linear;
+
+}
+
+@keyframes bandymas {
+    0%{
+        background-color: orange;
+    } 
+    10% {
+        background-color: green;
+    }
+    90%{
+
+    }
+    100% {
+        background-color: red;
+    }
+}

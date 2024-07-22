@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>6 paskaita - 09.11 - Sudetingesni selektoriai ir animacija</title>
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <section> <!-- Selektoriai-->
+            <h1>Selectors</h1>
+            <ul>
+                <li>Atributu selektoriai
+                    <ul>
+                        <li>
+                            [atributas] - parenkami visi tagai turintys nurodyta atributa
+                        </li>
+                        <li>
+                            [atributas="reiksme"] - parenkami visi tagai turintys nurodyta atributa su nurodyta reiksme
+                        </li>
+                        <li>
+                            [atributas~="... reiksme ..."] - parenkami visi tagai turintys nurodyta atributa kurio reiksmeje yra nurodyta reiksme
+                        </li>
+                        <li>
+                            [atributas|="reiksme"] - parenkami visi tagai turintys nudrodyta atributa, kurio reiksme yra "reiksme" arba "reiksme-..."
+                        </li>
+                        <li>
+                            [atributas^="reiksme..."] - parenkami visi tagai turintys nurodyta atributa, kurio reiksmes pradzioje yra "reiksme..."
+                        </li>
+                        <li>
+                            [atributas$="...reiksme"] - parenkami visi tagai turintys nurodyta atributa, kurio reiksmes gale yra "...reiksme"
+                        </li>
+                        <li>
+                            [atributas*="...reiksme..."] - parenkami visi tagai turintys nurodyta atributa, kurio reiksmeje yra <strong>simboliu seka</strong> "reiksme"
+                        </li>
+                    </ul>
+                </li>
+                <li>Pseudo Elementai
+                    <ul>
+                        <li>
+                            element::before - iterpia turini pries elementa
+                        </li>
+                        <li>
+                            element::after - iterpia turini uz elemento
+                        </li>
+                        <li>
+                            element::first-letter - parenka pirmaja elemento raide
+                        </li>
+                        <li>
+                            element::first-line - parenka pirmaja elemento eilute
+                        </li>
+                        <li>
+                            li::marker - parenka saraso elemento zyme
+                        </li>
+                        <li>
+                            input(arba textarea)::placeholder - parenka inputo arba textarea tagu placeholderi 
+                        </li>
+                        <li>
+                            element::selection - parenka elemento pazymeta dali
+                        </li>
+                    </ul>
+                </li>
+                <li>Pseudo Klases(formu)
+                    <ul>
+                        <li>
+                            input:checked - parenkami pazymeti checkbox ir radio
+                        </li>
+                        <li>
+                            input:default - parenka is anksto parinkta pasirinkima
+                        </li>
+                        <li>
+                            input:disabled - parenka tuos formos elementus kurie turi atributa "disabled"
+                        </li>
+                        <li>
+                            input:enabled - parenka tuos formos elementus kurie neturi atributo "disabled"
+                        </li>
+                        <li>
+                            input:focus - parenka ta elementa, tuo momentu, kada vartotojo klaviaturos kursorius yra elemente(kada elementas yra fokusuojamas)
+                        </li>
+                        <li>
+                            input:in-range - parenka ta inputa(TIK number tipo), kurio reiksme yra nurodytose ribose
+                        </li>
+                        <li>
+                            input:out-of-range - parenka ta inputa(TIK number tipo), kurio reiksme yra uz nurodytu ribu 
+                        </li>
+                        <li>
+                            input:indeterminate - parenka inputa su nenurodyta/nei kart nezymeta reiksme
+                        </li>
+                        <li>
+                            inpute:valid - parenka inputa kurio reiksme atitinka nurodymus
+                        </li>
+                        <li>
+                            inpute:invalid - parenka inputa kurio reiksme neatitinka nurodymu
+                        </li>
+                        <li>
+                            input:required - parenka tuos formos elementus, kurie turi atributa "required"
+                        </li>
+                        <li>
+                            input:optional - parenka tuos formos elementus, kurie neturi atributo "required"
+                        </li>
+                        <li>
+                            input:read-only - parenka tuos formos elementus, kurie turi atributa "readonly"
+                        </li>
+                        <li>
+                            input:read-write - parenka tuos formos elementus, kurie neturi atributo "readonly"
+                        </li>
+                    </ul>
+                </li>
+                <li>Pseudo Klases(likusios)
+                    <ul>
+                        <li>
+                            a:link - paprasta nelankyta nuoroda
+                        </li>
+                        <li>
+                            a:visited - lankyta nuoroda
+                        </li>
+                        <li>
+                            element:hover - peles kursorius ant elemento
+                        </li>
+                        <li>
+                            a:active - siuo metu aktyvi nuoroda(paspaudimo momentas)
+                        </li>
+                        <li>
+                            element:empty - tuscio elementu selektorius
+                        </li>
+                        <li>
+                            element:not(selector) - parenka visus elementus , kurie nera nurodyti skliaustelio viduje
+                        </li>
+                        <li>
+                            element:lang(kalba) - parenka visus elementus, kurie turi norodyta "kalba" kalba.
+                        </li>
+                        <li>
+                            #idName:target - parenka puslapio dali i kuria tu nusikelei navigacijos pagalba
+                        </li>
+                        <li>
+                            :root - skirtas nustatyti svetaines root (pagrindiniams/pradiniams) stiliams arba kurti CSS kintamuosius
+                        </li>
+                        <li>
+                            element:first-child - parenka pirmaji vaikini "element"
+                        </li>
+                        <li>
+                            element:last-child - parenka paskutiniji vaikini "element"
+                        </li>
+                        <li>
+                            element:only-child - parenka vaikini elementa, jei jis yra vienintelis vaikinis "element"
+                        </li>
+                        <li>
+                            element:first-of-type - parenka pirmuosius savo tipo elementa sarase
+                        </li>
+                        <li>
+                            element:last-of-type - parenka paskutiniuosius savo tipo elementa sarase
+                        </li>
+                        <li>
+                            element:only-of-type - parenka vienintelius savo tipo elementa sarase
+                        </li>
+                        <li>
+                            :nth-child(n) - isskaiciuoja ir parenka kas kazkelinta vaikini elementa sarase nuo pradzios
+                        </li>
+                        <li>
+                            :nth-last-child(n) - isskaiciuoja ir parenka kas kazkelinta vaikini elementa sarase nuo galo
+                        </li>
+                        <li>
+                            :nth-of-type(n) - isskaiciuoja ir parenka kazkelintus skirtingu tipu elementus sarase nuo pradzios
+                        </li>
+                        <li>
+                            :nth-last-of-type(n) - isskaiciuoja ir parenka kazkelintus skirtingu tipu elementus sarase nuo galo
+                        </li>
+                        <li>
+                            <ul>
+                                <li>n'tasis - nurodo kazkelinta elelmenta</li>
+                                <li>xn - nurodo kas x'taji elementa</li>
+                                <li>xn+y - nurodo kas x'taji elementa nuo y elemento</li>
+                                <li>even === 2n(lyginis)</li>
+                                <li>odd === 2n + 1(nelyginis)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            :is() - 
+                        </li>
+                        <li>
+                            :has() - 
+                        </li>
+                        <li>
+                            :where() - 
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section> <!-- Transformacija -->
+            <h1>Transform</h1>
+            <p>
+                Stilius, kuris transformuoja elementa. Transformuoti galima 3-5 budais.
+            </p>
+            <ul>
+                <li>Rotate
+                    <ul>
+                        <li>
+                            rotate(deg) - tas pats kas rotateZ
+                        </li>
+                        <li>
+                            rotateX(deg) - suka aplink X asi
+                        </li>
+                        <li>
+                            rotateY(deg) - suka aplink Y asi
+                        </li>
+                        <li>
+                            rotateZ(deg) - suka aplink Z asi
+                        </li>
+                        <li>
+                            rotate3d(deg) - 
+                        </li>
+                    </ul>
+                </li>
+                <li>Translate
+                    <ul>
+                        <li>
+                            traslateX(px) - pastumia elementa X asyje per nurodyta kieki pixeliu (x asyje desineja dideja, kaire mazeja)
+                        </li>
+                        <li>
+                            traslateY(px) - pastumia elementa Y asyje per nurodyta kieki pixeliu (y asyje apacia dideja, virsu mazeja)
+                        </li>
+                        <li>
+                            traslateZ(px) - pastumia elementa Z asyje per nurodyta kieki pixeliu(tolyn dideja, artyn mazeja) 
+                        </li>
+                        <li>
+                            traslate(X px, Z px) - pastumia elementa X ir Z asyje 
+                        </li>
+                        <li>
+                            traslate3d(px)
+                        </li>
+                    </ul>
+                </li>
+                <li>Scale
+                    <ul>
+                        <li>scaleX(kartu) - tempia elementa X asyje</li>
+                        <li>scaleY(kartu) - tempia elementa Y asyje</li>
+                        <li>scaleZ(kartu) - tempia elementa Z asyje</li>
+                        <li>scale(kartuX,kartuY) - tempia elementa X ir Y asyse</li>
+                        <li>scale3d(kartu) - </li>
+                    </ul>
+                </li>
+                <li>Skew
+                    <ul>
+                        <li>
+                            skewX() - 
+                        </li>
+                        <li>
+                            skewY() - 
+                        </li>
+                        <li>
+                            skew(X, Y) - 
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h2>Transform-Origin</h2>
+            <p>
+                Transform origin nurodo nuo kurios elemento vietos vyksta jo transformacija(center by default)
+            </p>
+        </section>
+        <section><!-- Transition -->
+            <h1>Transtition</h1>
+            <p>
+                Tranzicija apraso elemento kitimo nustatymus.
+            </p>
+            <ul>
+                <li>
+                    transition-duration - nurodo per kiek laiko turi ivykti tranzicija
+                </li>
+                <li>
+                    transition-delay - nurodo kiek laiko tranzicija turi uzdelsti
+                </li>
+                <li>
+                    transition-property - nurodo kokios savybes keiciasi pagal tranzicijos nustatymus
+                </li>
+                <li>
+                    transition-timing-function - nurodo kaip bus paskirstytas laikas vykdyti tranzicija
+                    <ul>
+                        <li>ease</li>
+                        <li>ease-in</li>
+                        <li>ease-out</li>
+                        <li>ease-in-out</li>
+                        <li>linear</li>
+                        <li>cubic-bezier(n,n,n,n)</li>
+                    </ul>
+                </li>
+                <li>
+                    transition - nurodo visus transition stilius, bet kokia eiles tvarka, apart duration turi eiti po delay
+                </li>
+            </ul>
+            <div class="trans">
+
+            </div>
+        </section>
+        <section><!-- Animation -->
+            <h1>Animation</h1>
+            <ul>
+                <li>
+                    animation-name - jusu sugalvotas pavadinimas sitai animacijai
+                </li>
+                <li>
+                    animation-duration - animacijos trukme
+                </li>
+                <li>
+                    animation-delay - animacijos uzdelsimas
+                </li>
+                <li>
+                    animation-iteration-count - animacijos kartojimo kiekis
+                </li>
+                <li>
+                    animation-direction - nurodo animacijos krypti
+                    <ul>
+                        <li>normal - animacija juda nuo pradzios i gala ir pasiekus gala teleportuojasi i pradzia</li>
+                        <li>reverse - animacija juda nuo galo i pradzia ir pasiekus pradzia teleportuojasi i gala</li>
+                        <li>alternate - animacija juda nuo pradzios i gala ir pasiekus gala, juda nuo galo i pradzia</li>
+                        <li>alternate-reverse - animacija juda nuo galo i pradzia ir pasiekus pradzia,juda atgal i gala/li>
+                    </ul> 
+                </li>
+                <li>
+                    animation-play-state - animacijos vykdymo busena (running arba paused) 
+                </li>
+                <li>
+                    animation-timing-function - tas pats kas ir transition-timing-function 
+                </li>
+                <li>
+                    animation-fill-mode - nurodo ka animuojamam elementui daryti pasibaigus animacijai 
+                </li>
+                <li>
+                    animation-composition - good stuff
+                </li>
+                <li>
+                    animation - visu nustatymu apjungimas
+
+                </li>
+            </ul>
+            <h3>Animation keyframes</h3>
+            <p>
+
+            </p>
+            <div class="anim">
+                
+            </div>
+        </section>
+        </body>
+    </main>
+    <footer>
+
+    </footer>
+</html>

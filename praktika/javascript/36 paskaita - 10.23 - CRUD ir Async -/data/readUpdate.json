@@ -1,0 +1,67 @@
+{
+  "atsiskaitymai": [
+    {
+      "id": 1,
+      "pavadinimas": "HTML ir CSS",
+      "islaikytas": false
+    },
+    {
+      "id": 2,
+      "pavadinimas": "JS",
+      "islaikytas": false
+    },
+    {
+      "id": 3,
+      "pavadinimas": "Git ir Github",
+      "islaikytas": false
+    },
+    {
+      "id": 4,
+      "pavadinimas": "React",
+      "islaikytas": true
+    },
+    {
+      "id": 5,
+      "pavadinimas": "Baigiamasis",
+      "islaikytas": false
+    }
+  ],
+  "automobiliai": [
+    {
+      "marke": "Audi",
+      "modelis": "TT",
+      "metai": 2010,
+      "spalva": "#13e000",
+      "arDauzta": false,
+      "photo": "https://hips.hearstapps.com/hmg-prod/images/2023-audi-tt-rs-iconic-edition-259-1669644591.jpg",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "marke": "BMW",
+      "modelis": "9",
+      "metai": 2015,
+      "spalva": "#7CA0B4",
+      "arDauzta": true,
+      "photo": "https://images.carexpert.com.au/resize/3000/-/app/uploads/2021/09/2022-BMW-iX-xDrive-i40-Mineral-White-HERO.jpg"
+    },
+    {
+      "id": 3,
+      "marke": "Honda",
+      "modelis": "Civic",
+      "metai": 2018,
+      "spalva": "#933DEA",
+      "arDauzta": false,
+      "photo": "https://di-uploads-pod12.dealerinspire.com/driversautomart/uploads/2019/12/pasted-image-0.png"
+    },
+    {
+      "id": 4,
+      "marke": "Fiat",
+      "modelis": "Punto",
+      "metai": 2003,
+      "spalva": "#1E86D7",
+      "arDauzta": true,
+      "photo": "https://i.ytimg.com/vi/mjHNDx6EIQw/hqdefault.jpg"
+    }
+  ]
+}

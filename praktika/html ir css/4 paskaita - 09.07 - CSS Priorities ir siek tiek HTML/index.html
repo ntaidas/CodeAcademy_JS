@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paskaita 4 - Daugiau CSS</title>  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <section class="sek1"> <!-- Paveldimumas -->
+            <h2>Parent ir Child elementai</h2>
+            <p>
+                Child elementas turi viena vieninteli parent elementa(ta kurio viduje yra).
+            </p>
+            <p>
+                Tevinis elementas turi tureti bent viena elementa savo viduje.
+            </p>
+            <h1>Paveldimumas</h1>
+            <p>
+                Stiliai gali buti paveldimi is tevinio ar tevinio tevinio... elemento. Bet jie turi maziausia prioriteta, taigi jie gali buti labai lengvai overwritinti kitu stiliu. Stiliai kurie itakoja containerio turini YRA paveldimi, o stiliai kurie itakoja pati konteineri NERA  paveldimi(ne 100%).
+            </p>
+
+        </section>
+        <section> <!-- Narsykles numatytieji stiliai -->
+            <h1><a href="https://browserdefaultstyles.com/">User Agent Stylesheet</a></h1>
+            <h3>Normalize or Reset CSS</h3>
+            <p>
+                <a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank">Reset CSS</a> - suvienodina/ panaikina visu tagu stilius. (not a good option)
+            </p>
+            <p>
+                <a href="https://necolas.github.io/normalize.css/latest/normalize.css" target="_blank">Normalize CSS</a> - suvienodina stilius tarp skirtingu narsykliu, sutvarko nenorimus narsykliu numatytuosius stilius ir pritaiko modernius stiliaus standartus. 
+            </p>
+        </section>
+        <section> <!--CSS stiliu prioritetai -->
+            <h1>CSS Priorities</h1>
+            <ol>
+                <li style="color: red;">!important - ignoruoja visus prioritetus(neveikia su inherit)</li>
+                <li>Inline Style - 1000</li>
+                <li>ID - 100</li>
+                <li>Class - 10</li>
+                <li>Element - 1</li>
+                <li>CSS order - jei specifikacija yra vienoda.</li>
+                <li>User Agent Stylessheets - narsyklinis</li>
+                <li>Inheriting</li>
+            </ol>
+            <p>
+                Esant dviem selektoriam, kurie nusako to paties elemento skirtingus stilius, yra atsizvelgiama i tu selektoriu specifikacijas.
+                Aukstesni bala turintis selectorius turi aukstesni prioriteta.
+            </p>
+            <p>
+                Esant dviem vienodos specifikacijos selektoriams, keiciant ta pati stiliu, tuomet yra atsizvelgiama i CSS eiliskuma. Kuris selektorius yra aprasytas veliau, tas tures aukstesni prioriteta.
+            </p>
+            <p>
+                <span class="important">Jeigu imanoma - nenaudoti</span> !important prieraso. Vienintelis budas overwritinti !important tai su aukstesnes specifikacijos ar eiliskumo kitu !important tagu.
+            </p>
+        </section>
+        <section> <!-- Google Fonts -->
+            <h1>
+                <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+            </h1>
+            <p>
+                Norint naudoti sriftus is Fonts.google puslapio, reikia juos prijunkti prie savo svetaines HTML su link arba CSS su @import:url()
+            </p>
+        </section>
+        <section> <!-- Icons -->
+            <h1><a href="https://www.w3schools.com/icons/icons_reference.asp">Icons</a></h1>
+            <p>
+                <ul>
+                    <li>Font-Awesome</li>
+                    <li>Bootstrap</li>
+                    <li>Google</li>
+                    <li>...</li>
+                </ul>
+                <p>
+                    Norint naudotis kazkurios bibliotekos iconomis reikia jas prijunti prie CSS ar HTML failo.
+                    Iconos neturi savo tago, tam kad jas naudoti reikia naudoti koki kita taga ir suteikti jam reikiamas klases arba/ir reikiama HTML koda.
+                    Ikonoms atvaizduoti dazniausiai naudojamas 'i' arba 'span' tagas. 
+                    'i', nes asocijuojasi su zodziu icon ir yra labai greit rasoma.
+                    'span', nes tagas butent tokiems dalykams ir skirtas.
+                
+                </p>
+                <div>
+                    <div> <!-- Font-Awesome -->
+                        <h1><a href="https://fontawesome.com/icons" target="_blank">Font-Awesome</a></h1>
+                        <p></p>
+                        <i class="fa fa-500px" style="font-size:36px"></i>
+                        <span class="fa fa-500px" style="font-size:36px"></span>
+                        <span class="fa fa-500px" style="font-size:48px;color:red"></span>
+                        <span class="fa">&#xf26e;</span>
+                    </div>
+                    <div> <!-- Bootstrap -->
+                        <h1><a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap</a></h1>
+                        <p></p>
+                        <i class="glyphicon glyphicon-adjust"></i>
+                        <span class="glyphicon glyphicon-adjust"></span>
+                        <span class="glyphicon">&#xe063;</span>
+
+                    </div>
+                    <div> <!-- Google -->
+                        <h1><a href="https://fonts.google.com/icons">Google</a></h1>
+                        <p></p>
+                        <i class="material-icons">3d_rotation</i>
+                        <i class="material-icons">&#xe84d;</i>
+                        <span class="material-icons" style="font-size:48px;color:red">3d_rotation</span>
+                        <span></span>
+                    </div>
+                </div>
+            </p>
+        </section>
+        <section> <!-- Multimedia -->
+            <h1>Multimedia</h1>
+            <ul>
+                <li>img - image</li>
+                <li>video</li>
+                <li>audio</li>
+                <li>source</li>
+                <li>iframe - iterpimas</li>
+            </ul>
+            <div>
+                <div> <!-- image-->
+                    <img src="../3 paskaita - 09.06 - CSS niuansai, Box model,Puslapio struktura, Nav Bar/img/photo-1483232539664-d89822fb5d3e.jpeg" alt="leafy wall">
+                </div>
+                <div> <!-- video -->
+                    <video src=".mp4" controls autoplay loop></video>
+                </div>
+                <div> <!-- audio-->
+                    <audio src=".mp3" autoplay muted controls></audio>
+                </div>
+                <div> <!-- source -->
+                    <video controls autoplay>
+                        <source src=".mp4">
+                        <source src=".webm">
+                    </video>
+                    <audio controls muted autoplay>
+                        <source src=".mp3">
+                        <source src=".flac">
+                    </audio>
+                </div>
+                <div> <!-- iframe -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IZGNcSuwBZs?si=YYlbU3WS3uwvYeeU" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39663.708365246166!2d-0.05707828429896063!3d51.586897438580436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761de689874571%3A0xdfbffb8e3cafac48!2sWalthamstow%2C%20London%2C%20UK!5e0!3m2!1sen!2slt!4v1694082956969!5m2!1sen!2slt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

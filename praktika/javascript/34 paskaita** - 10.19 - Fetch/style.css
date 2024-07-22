@@ -1,0 +1,25 @@
+#display, #prekes{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card{
+    position: relative;
+    background-color: azure;
+    text-align: center;
+    width: 200px;
+    height: 350px;
+    box-shadow: 5px 5px 25px 5px azure;
+    border: 1px solid black;
+    word-wrap: break-word;
+}
+
+.card > button{
+    
+}
+
+.card > img{
+    width: 200px;
+}

@@ -1,0 +1,144 @@
+{
+    "tvShows":[
+        {
+            "id":"1",
+            "title":"Gintama",
+            "genre":"Animation Action Comedy",
+            "rating":"8.7",
+            "releaseDate": 2005,
+            "finished": 2021,
+            "description":"In an era where aliens have invaded and taken over feudal Tokyo, an unemployed samurai finds work however he can.",
+            "cover":"https://m.media-amazon.com/images/M/MV5BMDhmNjUxM2UtZTY2Zi00OTQ0LWExNjgtNDhkNTUyMjQ3MmU5XkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+            "lenght":"367 episodes",
+            "mainCast":[
+                {
+                    "name":"Gintoki Sakata",
+                    "picture":"https://otakuusamagazine.com/wp-content/uploads/2017/08/gintamaanime2017.jpg"
+                },{
+                    "name":"Kagura",
+                    "picture":"https://prescottsblog.files.wordpress.com/2012/06/kagura-troll-face.jpg"
+                },{
+                    "name":"Shinpachi Shimura",
+                    "picture":"https://cdn.anisearch.de/images/character/cover/0/665_300.webp"
+                }
+            ]
+
+        },{
+            "id":"2",
+            "title":"Hunter x Hunter",
+            "genre":"Animation Action Adventure",
+            "rating":"9.0",
+            "releaseDate": 2011,
+            "finished": 2014,
+            "description":"Gon Freecss aspires to become a Hunter, an exceptional being capable of greatness. With his friends and his potential, he seeks out his father, who left him when he was younger.",
+            "cover":"https://m.media-amazon.com/images/M/MV5BNGM0YTk3MWEtN2JlZC00ZmZmLWIwMDktZTMxZGE5Zjc2MGExXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+            "lenght":"148 episodes",
+            "mainCast":[
+                {
+                    "name":"Gon Freecss",
+                    "picture":"https://static.wikia.nocookie.net/hunterxhunter/images/3/3e/HxH2011_EP147_Gon_Portrait.png"
+                },{
+                    "name":"Killua Zoldyck",
+                    "picture":"https://jonahwritesdotblog.files.wordpress.com/2021/10/pjimage-2021-02-17t171727.443.jpg"
+                }
+            ]
+
+        },{
+            "id":"3",
+            "title":"How I Met Your Mother",
+            "genre":"Comedy Drama Romance",
+            "rating":"8.3",
+            "releaseDate": 2005,
+            "finished": 2014,
+            "description":"A father recounts to his children - through a series of flashbacks - the journey he and his four best friends took leading up to him meeting their mother.",
+            "cover":"https://m.media-amazon.com/images/M/MV5BNjg1MDQ5MjQ2N15BMl5BanBnXkFtZTYwNjI5NjA3._V1_FMjpg_UX1000_.jpg",
+            "lenght":"208 episodes",
+            "mainCast":[
+                {
+                    "name":"Ted Mosby",
+                    "picture":"https://static.wikia.nocookie.net/himym/images/1/14/WB0rq.jpg"
+                },{
+                    "name":"Barney Stinson",
+                    "picture":"https://static.wikia.nocookie.net/himym/images/8/83/Rc0JG.jpg"
+                },{
+                    "name":"Marshall Eriksen",
+                    "picture":"https://static.wikia.nocookie.net/himym/images/5/50/PlcCt.jpg"
+                },{
+                    "name":"Lily Aldrin",
+                    "picture":"https://static.wikia.nocookie.net/himym/images/c/cb/JJVSY.jpg"
+                },{
+                    "name":"Robin Scherbatsky",
+                    "picture":"https://upload.wikimedia.org/wikipedia/en/c/c9/Robin_Scherbatsky.png"
+                }
+            ]
+
+        },{
+            "id":"4",
+            "title":"Wednesday",
+            "genre":"Comedy Crime Fantasy",
+            "rating":"8.1",
+            "releaseDate": 2022,
+            "finished": false,
+            "description":"Follows Wednesday Addams' years as a student, when she attempts to master her emerging psychic ability, thwart a killing spree, and solve the mystery that embroiled her parents.",
+            "cover":"https://www.heavenofhorror.com/wp-content/uploads/2022/11/wednesday-netflix-review-1200x720.jpg",
+            "lenght":"9 episodes",
+            "mainCast":[
+                {
+                    "name":"Wednesday Addams",
+                    "picture":"https://static.wikia.nocookie.net/p__/images/1/12/WednesdayNetflix.jpeg"
+                },{
+                    "name":"Enid Sinclair",
+                    "picture":"https://static.wikia.nocookie.net/p__/images/0/0d/Enidsinclair.png"
+                }
+            ]
+
+        },{
+            "id":"5",
+            "title":"Stranger Things",
+            "genre":"Drama Fantasy Horror",
+            "rating":"8.7",
+            "releaseDate":2016 ,
+            "finished": false,
+            "description":"When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.",
+            "cover":"https://m.media-amazon.com/images/M/MV5BMDZkYmVhNjMtNWU4MC00MDQxLWE3MjYtZGMzZWI1ZjhlOWJmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+            "lenght":"34 episodes",
+            "mainCast":[
+                {
+                    "name":"Eleven",
+                    "picture":"https://m.media-amazon.com/images/M/MV5BMGJiZGJkM2UtNGJiYS00MTUxLWJlMGEtMjk0ZWNmNDkyNTE0XkEyXkFqcGdeQXVyMzQ3Nzk5MTU@._V1_.jpg"
+                },{
+                    "name":"Mike Wheeler",
+                    "picture":"https://static.wikia.nocookie.net/strangerthings8338/images/8/83/Mike_Wheeler_-_S4.jpg"
+                },{
+                    "name":"Dustin Henderson",
+                    "picture":"https://static.wikia.nocookie.net/strangerthings8338/images/0/07/Dustin_S4.png"
+                },{
+                    "name":"Lucas Sinclair",
+                    "picture":"https://static.wikia.nocookie.net/strangerthings8338/images/b/b4/Lucas_S4.png"
+                },{
+                    "name":"Will Byers",
+                    "picture":"https://static.wikia.nocookie.net/strangerthings8338/images/4/45/Will_in_California.png"
+                },{
+                    "name":"Max Mayfield",
+                    "picture":"https://i.pinimg.com/736x/84/14/fc/8414fc57e3a545c20d8a5af5dd252fe9.jpg"
+                },{
+                    "name":"Steve Harrington",
+                    "picture":"https://hips.hearstapps.com/hmg-prod/images/mh-steve-stranger-things-legend-1561499047-1-1561561628.jpg"
+                },{
+                    "name":"Nancy Wheeler",
+                    "picture":"https://static.wikia.nocookie.net/strangerthings8338/images/7/7f/NancyWheeler.png"
+                },{
+                    "name":"Jonathan Byers",
+                    "picture":"https://static.wikia.nocookie.net/strangerthings8338/images/5/50/Jonathan_in_Season_Four.png"
+                },{
+                    "name":"Jim Hopper",
+                    "picture":"https://static.wikia.nocookie.net/strangerthings8338/images/2/2b/JimHopper.png"
+                },{
+                    "name":"Joyce Byers",
+                    "picture":"https://static.wikia.nocookie.net/marvel-cinematic-universe-fanon/images/1/16/D-vr1muUwAAkEYF.jpg"
+                }
+            ]
+
+        }
+    ]
+}

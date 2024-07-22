@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22 paskaita</title>
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <section> <!-- Arrays-->
+            <h1>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array" target="_blank">
+                Arrays
+                </a>
+            </h1>
+            <h3>Savybes/Properties</h3>
+            <ul>
+                <li>array.length - grazina masyvo ilgi</li>
+            </ul>
+            <h3>Metodai</h3>
+            <ul>
+                <li>arejus.at(indexas) - grazina masyvo indexo elementa</li>
+                <li>arejus.concat(arejus2,arejus3, ... , ...) - NEMODIFIKUOJA pradinio, sujungia du ar daugiau masyvu</li>
+                <li>arejus.fill(value, start, end) - MODIFIKUOJA pradini, uzpildo value, nuo start iki end</li>
+                <li>arejus.includes(elementas) - tikrina ar arejuje yra visas elementas(negali buti dalis)</li>
+                <li>arejus.indexOf(elementas, fromIndex) - grazina kurioje pozicijoje masyve yra nurodyta reiksme, galima pasirinkti nuo kurios pozicijos ieksoti. Jei neranda grazina -1.</li>
+                <li>arejus.lastIndexOf(elementas, fromIndex) - grazina kurioje pozicijoje masyve yra nurodyta reiksme, iesko nuo galo judant i pradzia, galima pasirinkti nuo kurios pozicijos ieksoti. Jei neranda grazina -1.</li>
+                <li>arejus.join(separator) - pavercia areju i stringa ir tarp elementu sudeda separator(default kablelis, tuscias neiskiria ir gaunasi vienas zodis). Grazina naujai sugeneruota stringa</li>
+                <li>arejus.toString() - pavercia i string, bet nera galimybes deti skirtuko.</li>
+                <li>arejus.reverse() - apsuka masyva ir MODIFIKUOJA</li>
+                <li>arejus.toRevesed() - NEMODIFIKUOJA ir apsuka </li>
+                <li>arejus.slice(nuo,iki) - grazina masyvo elementus nuo iki pozicijos. NEMODIFIKUOJA pradinio masyvo</li>
+                <li>arejus.splice(nuo, kiek, element, element2, ...) - is pateikto masyvo isema nuo nurodytos pozicijos, nurokyta kieky ir i ta vieta patalpina kitus elementus. grazina isimtus elementus. Modifikuoja pradini masyva.</li>
+                <li>arejus.toSpliced() - tas pats kas splice, bet NEMODIFIKUOJA</li>
+                <li>arejus.sort(palyginimoFunkcija) - surikiuoja masyva nurodyta tvarka.MODIFIKUOJA pradini areju.
+                   dazniausia skaiciams: sort((a,b) => a-b)
+                   dazniausia zodziams: sort((a,b) => a.localeCompare(b))
+                </li>
+                <li>arejus.toSorted() - NEMODIFIKUOJA</li>
+                <li>arejus.push(reiskme) - prideda i masyvo gala ir grazina nauja ilgi MODIFIKUOJA pradini masyva</li>
+                <li>arejus.unshift(reiksme) - prideda i masyvo pradzia ir grazina nauja ilgi MODIFIKUOJA pradini masyva<li>
+                <li>arejus.pop() - isima reiksme is masyvo galo ir ja grazina, tuo paciu MODIFIKUOJA pradini masyva</li>
+                <li>arejus.shift() - isima reiksme is masyvo pradzios ir ja grazina, tuo paciu MODIFIKUOJA pradini masyva</li>
+                <li>arejus.with(index,reiksme) - grazina nauja masyva su pakeista reiksme at index.</li>
+            </ul>
+        </section>
+        <section> <!-- Objects-->
+            <h1>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank">
+                Object
+                </a>
+            </h1>
+            <h3>Metodai</h3>
+            <ul>
+                <li>Object.keys(objektas) - grazina objekto raktinius zodzius, kaip stringu masyva.</li>
+                <li>... </li>
+            
+            </ul>
+        </section>
+        <section> <!-- Functions-->
+            <h1>Funkcijos</h1>
+            <p>
+                Funkcija - kodas, kuri galima iskviesti betkuriuo momentu ir bet kiek kartu. Funkcija nevykdoma, tol kol nera iskviesta.
+            </p>
+            <p>
+                Aprasymas: function f_Vardas(parametrai,parametrai...){veiksmai};
+                Iskvietimas: f_vardas(argumentai, argumentai...);
+            </p>
+            <h2>Parametrai ir Argumentai</h2>
+            <p>
+                Parametrai - funkcijos viduje naudojami duomenys, kurie yra gaunami funkcijos iskvietimo metu.
+            </p>
+            <p>
+                Argumentai - duomenys kurie yra paduodami i funkcija i ja besikreipiant.
+            </p>
+            <img src="https://i.stack.imgur.com/9lg1H.png" alt="parameters and arguments">
+            <h2>Callback</h2>
+            <p>
+                Callback - kai funkcija arba metodas kreipiasi i kita funkcija.
+            </p>
+            <h2>Anonimines funkcijos</h2> <!--Anonymous-->
+            <p>
+                Funkcijos be vardo, kurios egzistuoja tik kaip callback.
+            </p>
+            <h2>Arrow Function/Lambda</h2>
+            <p>
+                ES6 versijoje isleistas naujas bevardes funkcijos aprasymo budas.
+            </p>
+            <p>
+                Norint sukurti vardine funkcija naudojant arrow function, reik sukurti kintamaji, kuriam ja prilyginsi
+            </p>
+            <h3>Arrow function uzrasymo budai</h3>
+            <ul>
+                <li>(par1,par2,...) => {veiksmai...}</li>
+                <li>par => {veiksmai...}</li>
+                <li>(par1,par2,...) => veiksmas</li>
+                <li>par => veiksmas</li>
+            </ul>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
